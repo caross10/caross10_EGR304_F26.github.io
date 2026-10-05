@@ -1,8 +1,8 @@
 ---
 title: Individal Block Diagram
 tags:
-- tag1
-- tag2
+- EGR 304
+- Block Diagram
 ---
 
 ## Overview
