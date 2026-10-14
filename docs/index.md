@@ -6,60 +6,53 @@ EGR304
 Automatic Pet Food Dispenser
 
 <center>
-<font size="6">Caleb Ross — Engineering Datasheet</font><br>
-EGR 304 — Embedded Systems Design<br>
+<font size="6">Caleb Ross Datasheet</font><br>
+as part of<br>
 <font size="8">Automatic Pet Food Dispenser</font><br>
-Team 101
+for<br>
+<font size="5">Team 101</font>
 </center>
 
 Introduction
 
-This datasheet documents my individual engineering work for the Automatic Pet Food Dispenser project in EGR 304. The project involves designing an electronic system that can control the timing and operation of an automatic pet food dispenser. My work focuses on the electronic components, circuit design, microcontroller interfaces, and supporting documentation needed to develop and integrate the system.
-
-This website serves as a central location for my design documents and component information. It will be updated as the project develops and design decisions are finalized.
+This datasheet documents my individual engineering work for the Automatic Pet Food Dispenser project in EGR 304. It organizes the design information, component selections, and supporting documentation for the electronic system.
 
 Project Summary
 
-The Automatic Pet Food Dispenser is designed to automate the process of dispensing pet food using electronic control and timing functions. The system requires hardware that can generate and process signals, interface with a microcontroller, and provide appropriate power to the electronic components.
+The Automatic Pet Food Dispenser is designed to automate pet food dispensing using electronic timing and control. The system uses electronic components and a microcontroller to support the timing, signal processing, and control functions needed for operation.
 
-The design uses the PIC18F57Q43 Curiosity Nano microcontroller as part of the control system. The electronic design work includes selecting components compatible with the system's power requirements, developing circuit documentation, and considering how the different hardware elements communicate with one another.
+My work focuses on the Timer/Scheduler subsystem, including component selection, power requirements, signal conditioning, and interfaces with the PIC18F57Q43 Curiosity Nano microcontroller.
 
-My individual work supports the larger team project by documenting the subsystem design, evaluating component options, and organizing the information needed to build, test, and improve the electronic system.
-
-For additional information about the overall team project, see the team report.
+For additional information about the overall project, see the team report.
 
 My Contribution
 
-My work focuses on the electronic design and documentation for the Automatic Pet Food Dispenser, with particular attention to the Timer/Scheduler subsystem and its interfaces with the rest of the system.
+My contributions focus on the electronic design and documentation for the Automatic Pet Food Dispenser, including:
 
-My engineering work includes:
+Component selection: Comparing timer ICs, operational amplifiers, and voltage regulators based on electrical specifications, cost, package type, and compatibility with the planned 5 V supply.
 
-Component selection: Comparing commercially available timer ICs, operational amplifiers, and voltage regulators based on electrical specifications, power requirements, package types, cost, and suitability for the design.
+Timer and signal conditioning: Evaluating the TLC555CP timer and MCP6004-I/P operational amplifier for the Timer/Scheduler subsystem.
 
-Timer and signal conditioning: Evaluating the TLC555CP timer and MCP6004-I/P operational amplifier for timing and signal-conditioning functions, including the need to verify the final signal behavior against the circuit requirements.
+Power regulation: Evaluating 5 V regulators, including the L7805CV, and considering current requirements and heat dissipation.
 
-Power regulation: Evaluating 5 V linear regulators, including the L7805CV, and considering current requirements and thermal dissipation.
+Microcontroller development: Working with the PIC18F57Q43 Curiosity Nano and its ADC, UART, PWM, and digital I/O functionality in laboratory exercises.
 
-Microcontroller integration: Working with the PIC18F57Q43 Curiosity Nano board and its digital I/O, ADC, UART, and PWM functionality in embedded-systems laboratory work.
+Circuit and PCB design: Creating and checking schematics, developing custom KiCad symbols and footprints, resolving design-rule issues, and preparing Gerber files.
 
-Circuit and PCB design: Developing schematics, creating custom KiCad symbols and footprints, checking electrical and design-rule errors, and preparing PCB manufacturing files.
-
-Engineering documentation: Maintaining design diagrams, component comparisons, pin/interface information, and power-budget documentation to support implementation and future revisions.
-
-The following pages provide access to the main design documents for this project.
+Engineering documentation: Maintaining design diagrams, component comparisons, interface information, and power budget documentation.
 
 Design Documentation
 
-Block Diagram — Overview of the system structure, major functional blocks, and subsystem interfaces.
+Block Diagram — Shows the system's main functional blocks and connections.
 
-Component Selection — Comparison of component alternatives, their advantages and disadvantages, and the rationale for the selected timer, operational amplifier, and voltage regulator.
+Component Selection — Compares component alternatives and explains the selected timer, operational amplifier, and voltage regulator.
 
-Power Budget — Documentation for evaluating the electrical power requirements of the subsystem and its components.
+Power Budget — Provides documentation for the subsystem's power requirements.
 
-Bill of Materials (BOM) — Reference for the components and materials used in the design.
+Bill of Materials (BOM) — Provides a reference for the components and materials used in the design.
 
 Design Approach
 
-The design process involves evaluating component specifications, checking compatibility between circuit elements, and documenting the reasoning behind hardware decisions. Component choices must account for supply voltage, current consumption, signal levels, timing behavior, physical package requirements, and thermal limitations.
+Component decisions must account for supply voltage, current consumption, signal levels, timing behavior, package requirements, and thermal limitations. This datasheet will be updated as the circuit is developed, tested, and integrated with the rest of the dispenser.
 
-As the project progresses, the design documentation will be refined to reflect the actual circuit implementation, test results, and any changes made during integration. The goal is to maintain an accurate and useful reference for understanding the subsystem and how it contributes to the operation of the Automatic Pet Food Dispenser.
+The goal is to maintain an accurate record of the subsystem's design decisions and provide documentation that helps the team understand, implement, and improve the electronic system.
