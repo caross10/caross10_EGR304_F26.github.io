@@ -32,7 +32,7 @@ The TLC555CP is the preferred candidate because it provides the timing functions
 
 ## 3. Operational Amplifier Selection
 
-The MCP6004-I/P is shown in the comparator stage of the block diagram. It receives the timer’s analog signal and produces a digital output for the PIC18F57Q43. The component must operate from the available supply voltage and provide input and output levels suitable for the intended signal. The candidates were compared based on supply-voltage compatibility, input/output voltage range, current consumption, package type, bandwidth, cost, and ease of assembly.
+The Operational Amplifier receives the timer’s analog signal and produces a digital output for the PIC18F57Q43. The component must operate from the available supply voltage and provide input and output levels suitable for the intended signal. The candidates were compared based on supply-voltage compatibility, input/output voltage range, current consumption, package type, bandwidth, cost, and ease of assembly.
 
 ### Table 2. Operational Amplifier Candidates
 
