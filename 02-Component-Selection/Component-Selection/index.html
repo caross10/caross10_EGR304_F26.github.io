@@ -1136,7 +1136,12 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Option 1: Texas Instruments LM555CN/NOPB</strong> — <a href="https://www.digikey.com/en/products/detail/texas-instruments/LM555CN-NOPB/6575">DigiKey product page and datasheet</a>.<br><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="LM555CN.jpg" data-desc-position="bottom"><img src="LM555CN.jpg" alt="LM555CN timer" width="150"></a> <strong>Unit price:</strong> approximately $1.44. <strong>Stock:</strong> 14,800 units listed in the retrieved listing.</td>
+<td><strong>Option 1: Texas Instruments LM555CN/NOPB</strong> — <a href="https://www.digikey.com/en/products/detail/texas-instruments/LM555CN-NOPB/6575">DigiKey product page and datasheet</a>.<br><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="LM555CN.jpg" data-desc-position="bottom"><img src="LM555CN.jpg" alt="LM555CN timer" width="150"></a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Unit price:</strong> approximately $1.44. <strong>Stock:</strong> 14,800 units listed in the retrieved listing.</td>
 <td>- The 8-pin through-hole package is easy to use for breadboard prototyping and PCB assembly.<br>- Operates from 4.5 V to 16 V, making it compatible with a 5 V supply.<br>- Supports monostable and astable configurations for one-shot timing or repeating oscillation.<br>- Widely documented and suitable for basic timing applications.</td>
 <td>- Typical supply current is higher than that of CMOS timer alternatives.<br>- The minimum operating voltage is 4.5 V.<br>- Timing accuracy depends on external resistor and capacitor tolerances.<br>- Does not independently maintain the time of day or generate a precision analog ramp without additional circuitry.</td>
 </tr>
@@ -1156,7 +1161,7 @@
 <p><strong>Choice: Texas Instruments TLC555CP.</strong></p>
 <p>The TLC555CP is the preferred candidate because it provides the timing functions needed for the subsystem while consuming less supply current than conventional bipolar 555 timer alternatives. Its 2 V to 15 V operating range makes it compatible with the planned 5 V supply, and its through-hole package simplifies assembly and prototyping. The LM555CN/NOPB is another suitable candidate, but its higher supply-current consumption makes it less attractive for a low-power embedded system. The NE555P has the lowest unit cost of the three candidates and is a reasonable alternative when minimizing component cost is the main priority. The final timing resistor and capacitor values must be selected according to the required interval. The output waveform must also be verified against the signal-conditioning stage. A 555 timer produces a timing waveform, and its timing-capacitor voltage normally changes between internal threshold levels; it does not automatically produce a linear 0–5 V analog ramp.</p>
 <h2 id="3-operational-amplifier-selection">3. Operational Amplifier Selection</h2>
-<p>The Operational Amplifier receives the timer’s analog signal and produces a digital output for the PIC18F57Q43. The component must operate from the available supply voltage and provide input and output levels suitable for the intended signal. The candidates were compared based on supply-voltage compatibility, input/output voltage range, current consumption, package type, bandwidth, cost, and ease of assembly.</p>
+<p>The MCP6004-I/P is shown in the comparator stage of the block diagram. It receives the timer’s analog signal and produces a digital output for the PIC18F57Q43. The component must operate from the available supply voltage and provide input and output levels suitable for the intended signal. The candidates were compared based on supply-voltage compatibility, input/output voltage range, current consumption, package type, bandwidth, cost, and ease of assembly.</p>
 <h3 id="table-2-operational-amplifier-candidates">Table 2. Operational Amplifier Candidates</h3>
 <table>
 <thead>
