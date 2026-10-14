@@ -1230,13 +1230,13 @@
 <p>The L7805CV is the preferred candidate because it provides a fixed 5 V output, has a nominal 1.5 A output-current rating, uses a through-hole package, and has a lower unit price than the LM340AT-5.0/NOPB.</p>
 <p>The MC7805CTG has a lower unit cost, but its nominal 1 A current rating provides less capacity if the subsystem's final current requirement increases. The LM340AT-5.0/NOPB provides a similar nominal current rating to the L7805CV but has a higher unit cost.</p>
 <p>The regulator must be checked against the total system load and the external supply voltage. Its power dissipation can be estimated using</p>
-<p>$$</p>
-<p>P_{loss}=(V_{in}-V_{out})I_{out}</p>
-<p>$$</p>
+<div class="arithmatex">\[
+P_{loss}=(V_{in}-V_{out})I\_{out}
+\]</div>
 <p>For example, if the input voltage is 9 V, the output voltage is 5 V, and the load current is 0.5 A,</p>
-<p>$$</p>
-<p>P_{loss}=(9-5)(0.5)=2.0\text{ W}</p>
-<p>$$</p>
+<div class="arithmatex">\[
+P_{loss}=(9-5)(0.5)=2.0\text{ W}
+\]</div>
 <p>This amount of heat may require a heatsink or a different input-supply arrangement. The external source, regulator, and load must therefore be evaluated together.</p>
 <h2 id="5-pin-and-interface-table">5. Pin and Interface Table</h2>
 <p>The following table follows the Timer/Scheduler block diagram. Pin directions are described relative to the PIC18F57Q43. Where the diagram does not show a specific physical pin assignment, the table does not invent one.</p>
