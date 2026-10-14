@@ -87,6 +87,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -391,6 +396,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Welcome
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -400,6 +416,56 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-contribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      My Contribution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -709,6 +775,47 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-contribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      My Contribution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -732,37 +839,30 @@
 
   <h1>Welcome</h1>
 
-<p>EGR304</p>
-<p>Automatic Pet Food Dispenser</p>
 <p></p><center>
-<font size="6">Caleb Ross Datasheet</font><br>
+<font size="6"> Caleb Ross Datasheet</font><br>
 as part of<br>
-<font size="8">Automatic Pet Food Dispenser</font><br>
+<font size="8"> Automatic Pet Food Dispenser</font><br>
 for<br>
-<font size="5">Team 101</font>
+<font size="5"> Team 101 </font><br>
 </center><p></p>
-<p>Introduction</p>
-<p>This datasheet documents my individual engineering work for the Automatic Pet Food Dispenser project in EGR 304. It organizes the design information, component selections, and supporting documentation for the electronic system.</p>
-<p>Project Summary</p>
-<p>The Automatic Pet Food Dispenser is designed to automate pet food dispensing using electronic timing and control. The system uses electronic components and a microcontroller to support the timing, signal processing, and control functions needed for operation.</p>
-<p>My work focuses on the Timer/Scheduler subsystem, including component selection, power requirements, signal conditioning, and interfaces with the PIC18F57Q43 Curiosity Nano microcontroller.</p>
-<p>For additional information about the overall project, see the team report.</p>
-<p>My Contribution</p>
-<p>My contributions focus on the electronic design and documentation for the Automatic Pet Food Dispenser, including:</p>
-<p>Component selection: Comparing timer ICs, operational amplifiers, and voltage regulators based on electrical specifications, cost, package type, and compatibility with the planned 5 V supply.</p>
-<p>Timer and signal conditioning: Evaluating the TLC555CP timer and MCP6004-I/P operational amplifier for the Timer/Scheduler subsystem.</p>
-<p>Power regulation: Evaluating 5 V regulators, including the L7805CV, and considering current requirements and heat dissipation.</p>
-<p>Microcontroller development: Working with the PIC18F57Q43 Curiosity Nano and its ADC, UART, PWM, and digital I/O functionality in laboratory exercises.</p>
-<p>Circuit and PCB design: Creating and checking schematics, developing custom KiCad symbols and footprints, resolving design-rule issues, and preparing Gerber files.</p>
-<p>Engineering documentation: Maintaining design diagrams, component comparisons, interface information, and power budget documentation.</p>
-<p>Design Documentation</p>
-<p>Block Diagram — Shows the system's main functional blocks and connections.</p>
-<p>Component Selection — Compares component alternatives and explains the selected timer, operational amplifier, and voltage regulator.</p>
-<p>Power Budget — Provides documentation for the subsystem's power requirements.</p>
-<p>Bill of Materials (BOM) — Provides a reference for the components and materials used in the design.</p>
-<p>Design Approach</p>
-<p>Component decisions must account for supply voltage, current consumption, signal levels, timing behavior, package requirements, and thermal limitations. This datasheet will be updated as the circuit is developed, tested, and integrated with the rest of the dispenser.</p>
-<p>The goal is to maintain an accurate record of the subsystem's design decisions and provide documentation that helps the team understand, implement, and improve the electronic system.</p>
+<h2 id="introduction">Introduction</h2>
+<ul>
+<li>This datasheet documents my individual engineering work for the Automatic Pet Food Dispenser project in EGR 304. It provides an overview of the system design, my contributions to the electronic design, and links to the supporting engineering documentation.</li>
+</ul>
+<h3 id="project-summary">Project Summary</h3>
+<ul>
+<li>The Automatic Pet Food Dispenser is designed to automate pet food dispensing through electronic timing and control. The system uses the PIC18F57Q43 Curiosity Nano microcontroller and supporting electronic components to provide timing, signal conditioning, and control functions. My work focuses on the Timer/Scheduler subsystem and selecting components that meet the design's electrical and power requirements.</li>
+<li>For additional information about the overall project, see the <a href="https://embedded-systems-design.github.io/EGR304TeamTemplate/">team report</a>.</li>
+</ul>
+<h3 id="my-contribution">My Contribution</h3>
+<ul>
+<li>My contributions focus on component selection, electronic circuit design, microcontroller interfacing, and engineering documentation. I have evaluated timer ICs, operational amplifiers, and 5 V voltage regulators based on their specifications, cost, and compatibility with the planned circuit. My related laboratory work includes PIC18F57Q43 programming, ADC, UART, and PWM functionality, along with KiCad schematic and PCB design, custom symbols and footprints, design-rule checking, and Gerber file preparation.</li>
+<li>To review the overall system structure and connections, see the <a href="https://caross10.github.io/caross10_EGR304_F26.github.io/01-Block-Diagram/Block-Diagram/">Block Diagram</a> section of the datasheet.</li>
+<li>To review the component alternatives, advantages, disadvantages, and final selection rationale, see the <a href="https://caross10.github.io/caross10_EGR304_F26.github.io/02-Component-Selection/Component-Selection/">Component Selection</a> section of the datasheet.</li>
+<li>To review the subsystem's power documentation, see the <a href="https://caross10.github.io/caross10_EGR304_F26.github.io/05-Power-Budget/Power-Budget/">Power Budget</a> section of the datasheet.</li>
+<li>To review the materials and components used in the design, see the <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/">BOM</a> section of the datasheet.</li>
+</ul>
 
 
 
