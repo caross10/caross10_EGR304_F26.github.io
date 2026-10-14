@@ -89,17 +89,13 @@ The MC7805CTG has a lower unit cost, but its nominal 1 A current rating provides
 The regulator must be checked against the total system load and the external supply voltage. Its power dissipation can be estimated using
 
 $$
-
 P_{loss}=(V_{in}-V_{out})I\_{out}
-
 $$
 
 For example, if the input voltage is 9 V, the output voltage is 5 V, and the load current is 0.5 A,
 
 $$
-
 P_{loss}=(9-5)(0.5)=2.0\text{ W}
-
 $$
 
 This amount of heat may require a heatsink or a different input-supply arrangement. The external source, regulator, and load must therefore be evaluated together.
