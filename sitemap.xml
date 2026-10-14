@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://embedded-systems-design.github.io/EGR304DataSheetTemplate/02-Component-Selection/Power-Budget/</loc>
+         <lastmod>2026-10-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/</loc>
          <lastmod>2026-10-14</lastmod>
          <changefreq>daily</changefreq>
