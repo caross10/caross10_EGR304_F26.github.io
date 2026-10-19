@@ -10,7 +10,7 @@
 
 ## 1. Introduction
 
-The purpose of the Timer/Scheduler subsystem is to generate and condition timing signals for the Automatic Pet Food Dispenser. The subsystem interfaces with the PIC18F57Q43 Curiosity Nano microcontroller and other parts of the dispenser to support the timing and control functions required by the design. The major components considered in this report are a clock/timer integrated circuit, an MCP6004-I/P operational amplifier used in the comparator stage, and a 5 V voltage regulator. In the block diagram, the timer provides an analog 0–5 V signal to the comparator stage, which produces a digital 5 V signal for the PIC18F57Q43. The voltage regulator provides a regulated supply for the subsystem. The microcontroller was preselected for the project and is excluded from the component comparison tables. Pushbuttons, resistors, capacitors, wires, and ordinary PCB materials are also excluded because they are not considered major components under the assignment requirements.
+The purpose of the Timer/Scheduler subsystem is to generate and condition timing signals for the Automatic Pet Food Dispenser. The subsystem interfaces with the PIC18F57Q43 Curiosity Nano microcontroller and other parts of the dispenser to support the timing and control functions required by the design. The major components considered in this report are a clock/timer integrated circuit, an MCP6004-I/P operational amplifier used in the comparator stage, and a 5 V voltage regulator. In the block diagram, the timer provides an analog timing signal to the comparator stage, which produces a digital output for the PIC18F57Q43. The voltage regulator provides a regulated supply for the subsystem. The microcontroller was preselected for the project and is excluded from the component comparison tables. Pushbuttons, resistors, capacitors, wires, and ordinary PCB materials are also excluded because they are not considered major components under the assignment requirements.
 
 ## 2. Clock/Timer Selection
 
@@ -75,8 +75,8 @@ The following table follows the Timer/Scheduler block diagram. Pin directions ar
 | **Clock/Timer — TLC555CP** | Analog timing signal | Output to comparator | Analog, 0–5 V | Generates the analog timing signal supplied to the comparator stage. |
 | **Comparator — MCP6004-I/P** | RA0 / ADC1 | Input | Digital, nominal 5 V | Receives the comparator's digital output for processing by the PIC. |
 | **Button 1 — Aratas B3F-4055** | RA1 / Digital I/O | Input | Digital | Detects a user button press through the PIC's RA1 digital I/O pin. |
-| PWM interface | RA2 / PWM | Output | Digital/PWM | Provides a pulse-width-modulated output if required by the final implementation. |
-| Digital I/O interface | RA1, RB2, RC4, RD0, RD1 | Input/output | Digital | Provides the digital I/O signals identified in the block diagram for subsystem control and communication. |
+| **PWM interface** | RA2 / PWM | Output | Digital/PWM | Provides a pulse-width-modulated output if required by the final implementation. |
+| **Digital I/O interface** | RA1, RB2, RC4, RD0, RD1 | Input/output | Digital | Provides the digital I/O signals identified in the block diagram for subsystem control and communication. |
 | **Connector 1** | External subsystem interface | Input/output | Digital and analog | Provides the interface between the Timer/Scheduler subsystem and another subsystem. The eight-pin connector has four digital positions and four analog positions. |
 | **Connector 2** | RD0 / Digital I/O | Input/output | Digital and analog | Provides an additional subsystem interface. The eight-pin connector has four digital positions and four analog positions. |
 | **Power interface** | +5 V | Supply | DC power | Supplies the regulated logic rail to the subsystem. |
