@@ -1122,7 +1122,7 @@
 <p><strong>Project:</strong> Automatic Pet Food Dispenser  </p>
 <p><strong>Subsystem:</strong> Timer/Scheduler</p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>The purpose of the Timer/Scheduler subsystem is to generate and condition timing signals for the Automatic Pet Food Dispenser. The subsystem interfaces with the PIC18F57Q43 Curiosity Nano microcontroller and other parts of the dispenser to support the timing and control functions required by the design. The major components considered in this report are a clock/timer integrated circuit, an MCP6004-I/P operational amplifier used in the comparator stage, and a 5 V voltage regulator. In the block diagram, the timer provides an analog 0–5 V signal to the comparator stage, which produces a digital 5 V signal for the PIC18F57Q43. The voltage regulator provides a regulated supply for the subsystem. The microcontroller was preselected for the project and is excluded from the component comparison tables. Pushbuttons, resistors, capacitors, wires, and ordinary PCB materials are also excluded because they are not considered major components under the assignment requirements.</p>
+<p>The purpose of the Timer/Scheduler subsystem is to generate and condition timing signals for the Automatic Pet Food Dispenser. The subsystem interfaces with the PIC18F57Q43 Curiosity Nano microcontroller and other parts of the dispenser to support the timing and control functions required by the design. The major components considered in this report are a clock/timer integrated circuit, an MCP6004-I/P operational amplifier used in the comparator stage, and a 5 V voltage regulator. In the block diagram, the timer provides an analog timing signal to the comparator stage, which produces a digital output for the PIC18F57Q43. The voltage regulator provides a regulated supply for the subsystem. The microcontroller was preselected for the project and is excluded from the component comparison tables. Pushbuttons, resistors, capacitors, wires, and ordinary PCB materials are also excluded because they are not considered major components under the assignment requirements.</p>
 <h2 id="2-clocktimer-selection">2. Clock/Timer Selection</h2>
 <p>The clock/timer generates the timing waveform used by the Timer/Scheduler subsystem. The candidates were compared based on supply voltage, power consumption, timing flexibility, operating frequency, package type, and ease of implementation.</p>
 <h3 id="table-1-clocktimer-candidates">Table 1. Clock/Timer Candidates</h3>
@@ -1254,14 +1254,14 @@
 <td>Detects a user button press through the PIC's RA1 digital I/O pin.</td>
 </tr>
 <tr>
-<td>PWM interface</td>
+<td><strong>PWM interface</strong></td>
 <td>RA2 / PWM</td>
 <td>Output</td>
 <td>Digital/PWM</td>
 <td>Provides a pulse-width-modulated output if required by the final implementation.</td>
 </tr>
 <tr>
-<td>Digital I/O interface</td>
+<td><strong>Digital I/O interface</strong></td>
 <td>RA1, RB2, RC4, RD0, RD1</td>
 <td>Input/output</td>
 <td>Digital</td>
