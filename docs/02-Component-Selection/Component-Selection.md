@@ -84,13 +84,13 @@ The following table follows the Timer/Scheduler block diagram. Pin directions ar
 
 | Component or interface | PIC pin / signal | Direction relative to PIC | Signal type | Purpose |
 |---|---|---|---|---|
-| Clock/Timer — TLC555 | ADC1 / RA0 | Input | Analog, 0–5 V as shown in the block diagram | Receives the timer's analog timing signal for measurement by the PIC ADC. |
-| Comparator — MCP6004 | ADC2 / RA1, as drawn | Input | Digital, nominal 5 V as shown in the block diagram | Receives the comparator's digital output after the analog timing signal is compared against a threshold. |
+| Clock/Timer — TLC555 | ADC1 / RA0 | Input | Digital, 0–5 V | Receives the timer's analog timing signal for measurement by the PIC ADC. |
+| Comparator — MCP6004 | ADC2 / RA1 | Input | Digital, nominal 5 V | Receives the comparator's digital output after the analog timing signal is compared against a threshold. |
 | **Button 1 — Aratas B3F-4055** | **RA1 / Digital I/O** | Input | Digital | Detects a user button press through the PIC's RA1 digital I/O pin. |
-| PWM interface | RA2 / PWM | Output | Digital/PWM | Provides a pulse-width-modulated output if required by the final implementation. |
-| Digital I/O interface | RA1, RB2, RC4, RD0, RD1 | Input/output, depending on signal | Digital | Provides the digital I/O signals identified in the block diagram for subsystem control and communication. |
-| **Connector 1** | **RD0 / Digital I/O** | Input/output, depending on the exchanged signal | Digital | Connects the Timer/Scheduler subsystem to the other subsystem through the PIC's RD0 digital I/O connection. The connector layout shows eight positions, with pins 1–4 designated for digital signals and pins 5–8 designated for analog signals. |
-| **Connector 2** | External subsystem interface; individual PIC pin assignments must follow the finalized wiring | Input/output, depending on exchanged signals | Digital and analog connector groups | Provides the additional subsystem interface shown in the block diagram. The connector layout identifies pins 1–4 as digital and pins 5–8 as analog. |
+| PWM interface | RA2 / PWM | Output | Digital/PWM | Provides a pulse width modulated output if required by the final implementation. |
+| Digital I/O interface | RA1, RB2, RC4, RD0, RD1 | Input/output | Digital | Provides the digital I/O signals identified in the block diagram for subsystem control and communication. |
+| **Connector 1** | **RD0 / Digital I/O** | Input/output | Digital | Connects the Timer/Scheduler subsystem to the other subsystem through the PIC's RD0 digital I/O connection. The connector layout shows eight positions, with pins 1–4 designated for digital signals and pins 5–8 designated for analog signals. |
+| **Connector 2** | External subsystem interface | Input/output | Digital and analog connector groups | Provides the additional subsystem interface shown in the block diagram. The connector layout identifies pins 1–4 as digital and pins 5–8 as analog. |
 | Power interface | +5 V | Supply | DC power | Supplies the regulated logic rail to the subsystem. |
 | Ground interface | GND | Return | DC power return | Provides the common electrical reference for the circuit. |
 
@@ -106,7 +106,7 @@ The following table follows the Timer/Scheduler block diagram. Pin directions ar
 
 ## 7. Conclusion
 
-The component-selection process compared three commercially available solutions for each major component category. The candidates were evaluated based on electrical specifications, compatibility with the 5 V supply, current consumption, package type, cost, and availability of manufacturer documentation. The TLC555CP is the preferred timer because it offers low supply-current consumption and flexible timing configurations. The MCP6004-I/P is the preferred component for the comparator stage because its rail-to-rail input and output capability is useful for converting the timer signal into a digital signal for the PIC, subject to verification of its suitability for comparator operation. The L7805CV is the preferred regulator because it provides a fixed 5 V output and a nominal 1.5 A output-current rating in a practical through-hole package. The final implementation must verify the required timing interval, signal waveform, comparator threshold and switching behavior, regulator thermal dissipation, and total power consumption. These checks are necessary to ensure that the selected components work together correctly and meet the electrical requirements of the Automatic Pet Food Dispenser.
+The component-selection process compared three commercially available solutions for each major component category. The candidates were evaluated based on electrical specifications, compatibility with the 5 V supply, current consumption, package type, cost, and availability of manufacturer documentation. The TLC555CP is the preferred timer because it offers low supply-current consumption and flexible timing configurations. The MCP6004-I/P is the preferred component for the comparator stage because its rail to rail input and output capability is useful for converting the timer signal into a digital signal for the PIC, subject to verification of its suitability for comparator operation. The L7805CV is the preferred regulator because it provides a fixed 5 V output and a nominal 1.5 A output-current rating in a practical through-hole package. The final implementation must verify the required timing interval, signal waveform, comparator threshold and switching behavior, regulator thermal dissipation, and total power consumption. These checks are necessary to ensure that the selected components work together correctly and meet the electrical requirements of the Automatic Pet Food Dispenser.
 
 
 ## 8. References
