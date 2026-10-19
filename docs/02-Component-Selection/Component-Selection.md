@@ -64,19 +64,7 @@ The voltage regulator provides a stable 5 V supply for the subsystem's active el
 
 **Choice: STMicroelectronics L7805CV.**
 
-The L7805CV is the preferred candidate because it provides a fixed 5 V output, has a nominal 1.5 A output-current rating, uses a through-hole package, and has a lower unit price than the LM340AT-5.0/NOPB. The MC7805CTG has a lower unit cost, but its nominal 1 A current rating provides less capacity if the subsystem's final current requirement increases. The LM340AT-5.0/NOPB provides a similar nominal current rating to the L7805CV but has a higher unit cost. The regulator must be checked against the total system load and the external supply voltage. Its power dissipation can be estimated using: 
-
-$$
-P_{loss}=(V_{in}-V_{out})I\_{out}
-$$
-
-For example, if the input voltage is 9 V, the output voltage is 5 V, and the load current is 0.5 A,
-
-$$
-P_{loss}=(9-5)(0.5)=2.0\text{ W}
-$$
-
-This amount of heat may require a heatsink or a different input-supply arrangement. The external source, regulator, and load must therefore be evaluated together.
+The L7805CV is the preferred candidate because it provides a fixed 5 V output, has a nominal 1.5 A output-current rating, uses a through-hole package, and has a lower unit price than the LM340AT-5.0/NOPB. The MC7805CTG has a lower unit cost, but its nominal 1 A current rating provides less capacity if the subsystem's final current requirement increases. The LM340AT-5.0/NOPB provides a similar nominal current rating to the L7805CV but has a higher unit cost. The regulator must be checked against the total system load and the external supply voltage.
 
 ## 5. Pin and Interface Table
 
@@ -84,25 +72,23 @@ The following table follows the Timer/Scheduler block diagram. Pin directions ar
 
 | Component or interface | PIC pin / signal | Direction relative to PIC | Signal type | Purpose |
 |---|---|---|---|---|
-| Clock/Timer — TLC555 | ADC1 / RA0 | Input | Digital, 0–5 V | Receives the timer's analog timing signal for measurement by the PIC ADC. |
-| Comparator — MCP6004 | ADC2 / RA1 | Input | Digital, nominal 5 V | Receives the comparator's digital output after the analog timing signal is compared against a threshold. |
-| **Button 1 — Aratas B3F-4055** | **RA1 / Digital I/O** | Input | Digital | Detects a user button press through the PIC's RA1 digital I/O pin. |
-| PWM interface | RA2 / PWM | Output | Digital/PWM | Provides a pulse width modulated output if required by the final implementation. |
+| **Clock/Timer — TLC555CP** | Analog timing signal | Output to comparator | Analog, 0–5 V | Generates the analog timing signal supplied to the comparator stage. |
+| **Comparator — MCP6004-I/P** | RA0 / ADC1 | Input | Digital, nominal 5 V | Receives the comparator's digital output for processing by the PIC. |
+| **Button 1 — Aratas B3F-4055** | RA1 / Digital I/O | Input | Digital | Detects a user button press through the PIC's RA1 digital I/O pin. |
+| PWM interface | RA2 / PWM | Output | Digital/PWM | Provides a pulse-width-modulated output if required by the final implementation. |
 | Digital I/O interface | RA1, RB2, RC4, RD0, RD1 | Input/output | Digital | Provides the digital I/O signals identified in the block diagram for subsystem control and communication. |
-| **Connector 1** | **RD0 / Digital I/O** | Input/output | Digital | Connects the Timer/Scheduler subsystem to the other subsystem through the PIC's RD0 digital I/O connection. The connector layout shows eight positions, with pins 1–4 designated for digital signals and pins 5–8 designated for analog signals. |
-| **Connector 2** | External subsystem interface | Input/output | Digital and analog connector groups | Provides the additional subsystem interface shown in the block diagram. The connector layout identifies pins 1–4 as digital and pins 5–8 as analog. |
-| Power interface | +5 V | Supply | DC power | Supplies the regulated logic rail to the subsystem. |
-| Ground interface | GND | Return | DC power return | Provides the common electrical reference for the circuit. |
-
-**Important pin-assignment note:** The block diagram appears to assign **RA1 to both the comparator output (ADC2) and Button 1**. These are separate signals, so the final schematic must resolve this conflict before the circuit is built. They cannot independently use the same physical pin at the same time without an appropriate design change. The table records the assignments as shown rather than silently changing them. Connector 1 is connected to RD0 as shown in the diagram. The exact individual analog connector pin assignments and the complete Connector 2 pin mapping should follow the finalized subsystem wiring.
+| **Connector 1** | External subsystem interface | Input/output | Digital and analog | Provides the interface between the Timer/Scheduler subsystem and another subsystem. The eight-pin connector has four digital positions and four analog positions. |
+| **Connector 2** | RD0 / Digital I/O | Input/output | Digital and analog | Provides an additional subsystem interface. The eight-pin connector has four digital positions and four analog positions. |
+| **Power interface** | +5 V | Supply | DC power | Supplies the regulated logic rail to the subsystem. |
+| **Ground interface** | GND | Return | DC power return | Provides the common electrical reference for the circuit. |
 
 ## 6. Final Component Selection Summary
 
 | Major component | Selected candidate | Main reason for selection |
 |---|---|---|
-| **Clock/Timer** | Texas Instruments TLC555CP | Low supply current, 5 V compatibility, through-hole package, and adequate timing capability. |
-| **Comparator stage / Operational Amplifier** | Microchip MCP6004-I/P | Rail-to-rail input/output operation, low-voltage compatibility, and low supply current. |
-| **5 V Voltage Regulator** | STMicroelectronics L7805CV | Fixed 5 V output, nominal 1.5 A capability, through-hole package, and favorable cost and availability. |
+| **Clock/Timer** | Texas Instruments TLC555CP | Low supply current, 5 V compatibility, through hole package, and adequate timing capability. |
+| **Comparator stage / Operational Amplifier** | Microchip MCP6004-I/P | Rail to rail input/output operation, low voltage compatibility, and low supply current. |
+| **5 V Voltage Regulator** | STMicroelectronics L7805CV | Fixed 5 V output, nominal 1.5 A capability, through hole package, and favorable cost and availability. |
 
 ## 7. Conclusion
 
