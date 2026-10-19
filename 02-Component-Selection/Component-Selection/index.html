@@ -1218,15 +1218,7 @@
 </table>
 <h3 id="final-voltage-regulator-selection">Final Voltage Regulator Selection</h3>
 <p><strong>Choice: STMicroelectronics L7805CV.</strong></p>
-<p>The L7805CV is the preferred candidate because it provides a fixed 5 V output, has a nominal 1.5 A output-current rating, uses a through-hole package, and has a lower unit price than the LM340AT-5.0/NOPB. The MC7805CTG has a lower unit cost, but its nominal 1 A current rating provides less capacity if the subsystem's final current requirement increases. The LM340AT-5.0/NOPB provides a similar nominal current rating to the L7805CV but has a higher unit cost. The regulator must be checked against the total system load and the external supply voltage. Its power dissipation can be estimated using: </p>
-<div class="arithmatex">\[
-P_{loss}=(V_{in}-V_{out})I\_{out}
-\]</div>
-<p>For example, if the input voltage is 9 V, the output voltage is 5 V, and the load current is 0.5 A,</p>
-<div class="arithmatex">\[
-P_{loss}=(9-5)(0.5)=2.0\text{ W}
-\]</div>
-<p>This amount of heat may require a heatsink or a different input-supply arrangement. The external source, regulator, and load must therefore be evaluated together.</p>
+<p>The L7805CV is the preferred candidate because it provides a fixed 5 V output, has a nominal 1.5 A output-current rating, uses a through-hole package, and has a lower unit price than the LM340AT-5.0/NOPB. The MC7805CTG has a lower unit cost, but its nominal 1 A current rating provides less capacity if the subsystem's final current requirement increases. The LM340AT-5.0/NOPB provides a similar nominal current rating to the L7805CV but has a higher unit cost. The regulator must be checked against the total system load and the external supply voltage.</p>
 <h2 id="5-pin-and-interface-table">5. Pin and Interface Table</h2>
 <p>The following table follows the Timer/Scheduler block diagram. Pin directions are described relative to the PIC18F57Q43. Where the diagram does not show a specific physical pin assignment, the table does not invent one.</p>
 <table>
@@ -1241,22 +1233,22 @@ P_{loss}=(9-5)(0.5)=2.0\text{ W}
 </thead>
 <tbody>
 <tr>
-<td>Clock/Timer — TLC555</td>
-<td>ADC1 / RA0</td>
-<td>Input</td>
-<td>Digital, 0–5 V</td>
-<td>Receives the timer's analog timing signal for measurement by the PIC ADC.</td>
+<td><strong>Clock/Timer — TLC555CP</strong></td>
+<td>Analog timing signal</td>
+<td>Output to comparator</td>
+<td>Analog, 0–5 V</td>
+<td>Generates the analog timing signal supplied to the comparator stage.</td>
 </tr>
 <tr>
-<td>Comparator — MCP6004</td>
-<td>ADC2 / RA1</td>
+<td><strong>Comparator — MCP6004-I/P</strong></td>
+<td>RA0 / ADC1</td>
 <td>Input</td>
 <td>Digital, nominal 5 V</td>
-<td>Receives the comparator's digital output after the analog timing signal is compared against a threshold.</td>
+<td>Receives the comparator's digital output for processing by the PIC.</td>
 </tr>
 <tr>
 <td><strong>Button 1 — Aratas B3F-4055</strong></td>
-<td><strong>RA1 / Digital I/O</strong></td>
+<td>RA1 / Digital I/O</td>
 <td>Input</td>
 <td>Digital</td>
 <td>Detects a user button press through the PIC's RA1 digital I/O pin.</td>
@@ -1266,7 +1258,7 @@ P_{loss}=(9-5)(0.5)=2.0\text{ W}
 <td>RA2 / PWM</td>
 <td>Output</td>
 <td>Digital/PWM</td>
-<td>Provides a pulse width modulated output if required by the final implementation.</td>
+<td>Provides a pulse-width-modulated output if required by the final implementation.</td>
 </tr>
 <tr>
 <td>Digital I/O interface</td>
@@ -1277,27 +1269,27 @@ P_{loss}=(9-5)(0.5)=2.0\text{ W}
 </tr>
 <tr>
 <td><strong>Connector 1</strong></td>
-<td><strong>RD0 / Digital I/O</strong></td>
+<td>External subsystem interface</td>
 <td>Input/output</td>
-<td>Digital</td>
-<td>Connects the Timer/Scheduler subsystem to the other subsystem through the PIC's RD0 digital I/O connection. The connector layout shows eight positions, with pins 1–4 designated for digital signals and pins 5–8 designated for analog signals.</td>
+<td>Digital and analog</td>
+<td>Provides the interface between the Timer/Scheduler subsystem and another subsystem. The eight-pin connector has four digital positions and four analog positions.</td>
 </tr>
 <tr>
 <td><strong>Connector 2</strong></td>
-<td>External subsystem interface</td>
+<td>RD0 / Digital I/O</td>
 <td>Input/output</td>
-<td>Digital and analog connector groups</td>
-<td>Provides the additional subsystem interface shown in the block diagram. The connector layout identifies pins 1–4 as digital and pins 5–8 as analog.</td>
+<td>Digital and analog</td>
+<td>Provides an additional subsystem interface. The eight-pin connector has four digital positions and four analog positions.</td>
 </tr>
 <tr>
-<td>Power interface</td>
+<td><strong>Power interface</strong></td>
 <td>+5 V</td>
 <td>Supply</td>
 <td>DC power</td>
 <td>Supplies the regulated logic rail to the subsystem.</td>
 </tr>
 <tr>
-<td>Ground interface</td>
+<td><strong>Ground interface</strong></td>
 <td>GND</td>
 <td>Return</td>
 <td>DC power return</td>
@@ -1305,7 +1297,6 @@ P_{loss}=(9-5)(0.5)=2.0\text{ W}
 </tr>
 </tbody>
 </table>
-<p><strong>Important pin-assignment note:</strong> The block diagram appears to assign <strong>RA1 to both the comparator output (ADC2) and Button 1</strong>. These are separate signals, so the final schematic must resolve this conflict before the circuit is built. They cannot independently use the same physical pin at the same time without an appropriate design change. The table records the assignments as shown rather than silently changing them. Connector 1 is connected to RD0 as shown in the diagram. The exact individual analog connector pin assignments and the complete Connector 2 pin mapping should follow the finalized subsystem wiring.</p>
 <h2 id="6-final-component-selection-summary">6. Final Component Selection Summary</h2>
 <table>
 <thead>
@@ -1319,17 +1310,17 @@ P_{loss}=(9-5)(0.5)=2.0\text{ W}
 <tr>
 <td><strong>Clock/Timer</strong></td>
 <td>Texas Instruments TLC555CP</td>
-<td>Low supply current, 5 V compatibility, through-hole package, and adequate timing capability.</td>
+<td>Low supply current, 5 V compatibility, through hole package, and adequate timing capability.</td>
 </tr>
 <tr>
 <td><strong>Comparator stage / Operational Amplifier</strong></td>
 <td>Microchip MCP6004-I/P</td>
-<td>Rail-to-rail input/output operation, low-voltage compatibility, and low supply current.</td>
+<td>Rail to rail input/output operation, low voltage compatibility, and low supply current.</td>
 </tr>
 <tr>
 <td><strong>5 V Voltage Regulator</strong></td>
 <td>STMicroelectronics L7805CV</td>
-<td>Fixed 5 V output, nominal 1.5 A capability, through-hole package, and favorable cost and availability.</td>
+<td>Fixed 5 V output, nominal 1.5 A capability, through hole package, and favorable cost and availability.</td>
 </tr>
 </tbody>
 </table>
