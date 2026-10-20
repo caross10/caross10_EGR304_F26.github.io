@@ -12,4 +12,4 @@ This schematic is designed to support the timer/scheduler subsystem for the Auto
 
 ## Resources
 
-The schematic as a PDF download is available [*here*](Subsystem%20Schematic%20Design.pdf), and the ZIP folder of the project is available [*here*](Subsystem%20Schematic%20Design.zip).
+The schematic as a PDF download is available [*here*](Subsystem%20Schematic%20Design.pdf), and the ZIP folder of the project is available [*here*](Subsytem%20Schematic%20Design.zip).
