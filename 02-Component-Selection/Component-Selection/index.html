@@ -1229,7 +1229,7 @@
 <p><strong>Choice: STMicroelectronics L7805CV.</strong></p>
 <p>The L7805CV is the preferred candidate because it provides a fixed 5 V output, has a nominal 1.5 A output-current rating, uses a through-hole package, and has a lower unit price than the LM340AT-5.0/NOPB. The MC7805CTG has a lower unit cost, but its nominal 1 A current rating provides less capacity if the subsystem's final current requirement increases. The LM340AT-5.0/NOPB provides a similar nominal current rating to the L7805CV but has a higher unit cost. The regulator must be checked against the total system load and the external supply voltage.</p>
 <h2 id="5-pin-and-interface-table">5. Pin and Interface Table</h2>
-<p>The following table reflects the optical sensor monitoring subsystem. Pin directions are described relative to the PIC18F57Q43. The sensor's conditioned output is intended to be read as an analog signal through RA0/ADC1. Any motor-stop request and external connector assignments must be confirmed against the final team interface definition.</p>
+<p>The following table reflects the optical sensor monitoring subsystem connections shown in the Team 101 block diagram. Pin directions are described relative to the PIC18F57Q43 Curiosity Nano.</p>
 <table>
 <thead>
 <tr>
@@ -1242,60 +1242,60 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Optical slot sensor — TCST1103</strong></td>
-<td>Conditioned sensor output to RA0 / ADC1</td>
-<td>Input</td>
-<td>Analog voltage</td>
-<td>Reads the conditioned sensor signal so the PIC can monitor changes caused by movement of the dispensing mechanism.</td>
+<td><strong>Optical slot sensor</strong></td>
+<td>Output to MCP6004-I/P</td>
+<td>Analog signal to op-amp</td>
+<td>Analog (0–5 V, 1 pin)</td>
+<td>Detects changes in the optical sensor signal.</td>
 </tr>
 <tr>
-<td><strong>Signal conditioning — MCP6004-I/P</strong></td>
+<td><strong>Signal conditioning</strong></td>
 <td>RA0 / ADC1</td>
-<td>Output from conditioning circuit to PIC</td>
-<td>Analog voltage</td>
-<td>Conditions the phototransistor signal for the PIC's ADC input. The output must remain within the ADC's permitted voltage range.</td>
-</tr>
-<tr>
-<td><strong>Debugging Button</strong></td>
-<td>RD1</td>
-<td>Output</td>
-<td>Digital</td>
-<td>Supports testing and debugging through a user button.</td>
-</tr>
-<tr>
-<td><strong>Status LED</strong></td>
-<td>RD2</td>
-<td>Output</td>
-<td>Digital</td>
-<td>Indicates a potential fault or issue detected by the subsystem.</td>
+<td>Input</td>
+<td>Analog (0–5 V, 1 pin)</td>
+<td>Conditions the optical sensor signal before it reaches the PIC's ADC input.</td>
 </tr>
 <tr>
 <td><strong>Debugging LED</strong></td>
 <td>RD0</td>
 <td>Output</td>
-<td>Digital</td>
-<td>Provides a visual indication during development and testing.</td>
+<td>Digital (5 V, 1 pin)</td>
+<td>Provides a visual indicator for the subsystem.</td>
+</tr>
+<tr>
+<td><strong>Debugging Button</strong></td>
+<td>RD1</td>
+<td>Input</td>
+<td>Digital (5 V, 1 pin)</td>
+<td>Provides a button input for testing and debugging.</td>
+</tr>
+<tr>
+<td><strong>Status LED</strong></td>
+<td>RD2</td>
+<td>Output</td>
+<td>Digital (5 V, 1 pin)</td>
+<td>Provides a second visual indicator for the subsystem.</td>
 </tr>
 <tr>
 <td><strong>Connector 1</strong></td>
-<td>RA1</td>
-<td>Input</td>
-<td>To be confirmed</td>
-<td>Provides the connection between this subsystem and the other team subsystems. Pin assignments and signal types must follow the final team interface definition.</td>
+<td>Pins 1–8</td>
+<td>Interface to other subsystems</td>
+<td>Digital and analog</td>
+<td>Provides the external connections shown in the block diagram, including digital and analog signals.</td>
 </tr>
 <tr>
 <td><strong>Power interface</strong></td>
 <td>+5 V</td>
 <td>Supply</td>
 <td>DC power</td>
-<td>Supplies the regulated logic rail to compatible circuitry.</td>
+<td>Supplies the regulated 5 V rail shown in the block diagram.</td>
 </tr>
 <tr>
 <td><strong>Ground interface</strong></td>
 <td>GND</td>
 <td>Return</td>
 <td>DC power return</td>
-<td>Provides the common electrical reference for connected circuitry.</td>
+<td>Provides the common electrical reference for the connected circuitry.</td>
 </tr>
 </tbody>
 </table>
