@@ -1250,52 +1250,38 @@
 </tr>
 <tr>
 <td><strong>Signal conditioning — MCP6004-I/P</strong></td>
-<td>Analog output to RA0 / ADC1</td>
+<td>RA0 / ADC1</td>
 <td>Output from conditioning circuit to PIC</td>
 <td>Analog voltage</td>
 <td>Conditions the phototransistor signal for the PIC's ADC input. The output must remain within the ADC's permitted voltage range.</td>
 </tr>
 <tr>
-<td><strong>Button 1</strong></td>
-<td>RA1 / Digital I/O</td>
-<td>Input</td>
+<td><strong>Debugging Button</strong></td>
+<td>RD1</td>
+<td>Output</td>
 <td>Digital</td>
 <td>Supports testing and debugging through a user button.</td>
 </tr>
 <tr>
 <td><strong>Status LED</strong></td>
-<td>PIC digital output pin to be confirmed</td>
+<td>RD2</td>
 <td>Output</td>
 <td>Digital</td>
 <td>Indicates a potential fault or issue detected by the subsystem.</td>
 </tr>
 <tr>
 <td><strong>Debugging LED</strong></td>
-<td>PIC digital output pin to be confirmed</td>
+<td>RD0</td>
 <td>Output</td>
 <td>Digital</td>
 <td>Provides a visual indication during development and testing.</td>
 </tr>
 <tr>
-<td><strong>Motor-stop request</strong></td>
-<td>Team interface pin to be confirmed</td>
-<td>Output from this subsystem</td>
-<td>Digital control signal, if selected by the team</td>
-<td>Intended to request that the motor-driver subsystem stop the motor when a fault is detected. The final signal and connector pin must be confirmed with the team.</td>
-</tr>
-<tr>
 <td><strong>Connector 1</strong></td>
-<td>External subsystem interface</td>
-<td>Input/output as defined by team</td>
+<td>RA1</td>
+<td>Input</td>
 <td>To be confirmed</td>
 <td>Provides the connection between this subsystem and the other team subsystems. Pin assignments and signal types must follow the final team interface definition.</td>
-</tr>
-<tr>
-<td><strong>Connector 2, pin 2</strong></td>
-<td>RD0 / Digital I/O</td>
-<td>As defined by the final circuit</td>
-<td>Digital</td>
-<td>Provides the documented connection to PIC digital I/O. Confirm the signal direction and function in the final schematic.</td>
 </tr>
 <tr>
 <td><strong>Power interface</strong></td>
@@ -1348,7 +1334,7 @@
 <li>Vishay Semiconductor, <a href="https://www.vishay.com/en/product/83764/">TCST1103 product page and datasheet</a>.</li>
 <li>Vishay Semiconductor, <a href="https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847">TCST1103 product page on DigiKey</a>.</li>
 <li>Vishay Semiconductor, <a href="https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST2103/2354849">TCST2103 product page and datasheet</a>.</li>
-<li>Omron, <a href="https://omronfs.omron.com/en_US/ecb/products/pdf/en-ee_sx1103.pdf">EE-SX1103 product page and datasheet</a>.</li>
+<li>Omron, <a href="https://www.digikey.com/en/products/detail/aratas-formerly-omron-components/EE-SX1103/355306">EE-SX1103 product page and datasheet</a>.</li>
 <li>Microchip Technology, <a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060">MCP6004-I/P product page and datasheet</a>.</li>
 <li>Texas Instruments, <a href="https://www.digikey.com/en/products/detail/texas-instruments/LM358P/277042">LM358P product page and datasheet</a>.</li>
 <li>Texas Instruments, <a href="https://www.digikey.com/en/products/detail/texas-instruments/LM324N/277627">LM324N product page and datasheet</a>.</li>
