@@ -115,13 +115,12 @@ The component-selection process compared commercially available options for the 
 
 The product pages below provide manufacturer information and datasheets for the components compared in this report. Reference prices and stock quantities are snapshots from the listings used during preparation and may change.
 
-1. Vishay Semiconductor, [TCST1103 product page and datasheet](https://www.vishay.com/en/product/83764/).
-2. Vishay Semiconductor, [TCST1103 product page on DigiKey](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847).
-3. Vishay Semiconductor, [TCST2103 product page and datasheet](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST2103/2354849).
-4. Omron, [EE-SX1103 product page and datasheet](https://www.digikey.com/en/products/detail/aratas-formerly-omron-components/EE-SX1103/355306).
-5. Microchip Technology, [MCP6004-I/P product page and datasheet](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060).
-6. Texas Instruments, [LM358P product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM358P/277042).
-7. Texas Instruments, [LM324N product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM324N/277627).
-8. STMicroelectronics, [L7805CV product page and datasheet](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964).
-9. onsemi, [MC7805CTG product page and datasheet](https://www.digikey.com/en/products/detail/onsemi/MC7805CTG/919333).
-10. Texas Instruments, [LM340AT-5.0/NOPB product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM340AT-5-0-NOPB/148173).
+1. Vishay Semiconductor, [TCST1103 product page on DigiKey](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847).
+2. Vishay Semiconductor, [TCST2103 product page and datasheet](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST2103/2354849).
+3. Omron, [EE-SX1103 product page and datasheet](https://www.digikey.com/en/products/detail/aratas-formerly-omron-components/EE-SX1103/355306).
+4. Microchip Technology, [MCP6004-I/P product page and datasheet](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060).
+5. Texas Instruments, [LM358P product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM358P/277042).
+6. Texas Instruments, [LM324N product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM324N/277627).
+7. STMicroelectronics, [L7805CV product page and datasheet](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964).
+8. onsemi, [MC7805CTG product page and datasheet](https://www.digikey.com/en/products/detail/onsemi/MC7805CTG/919333).
+9. Texas Instruments, [LM340AT-5.0/NOPB product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM340AT-5-0-NOPB/148173).
