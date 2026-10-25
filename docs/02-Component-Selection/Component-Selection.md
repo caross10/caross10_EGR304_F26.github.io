@@ -10,11 +10,7 @@
 
 ## 1. Introduction
 
-The purpose of the Optical Sensor Monitoring subsystem is to monitor movement of the dispensing mechanism and help identify potential faults in the Automatic Pet Food Dispenser. The subsystem interfaces with the PIC18F57Q43 Curiosity Nano microcontroller and the other parts of the dispenser. The major components considered in this report are a Vishay TCST1103 optical slot sensor, a Microchip MCP6004-I/P operational amplifier used for sensor signal conditioning, and a 5 V voltage regulator.
-
-The TCST1103 detects changes in an infrared beam when a slotted wheel or mechanical flag moves through the sensor. The sensor's phototransistor output is conditioned by the MCP6004-I/P circuit and is intended to be read by the PIC18F57Q43 through RA0/ADC1. The microcontroller can process these readings to help determine whether the dispensing mechanism is operating as expected. If a fault is detected, the subsystem is intended to request that the motor-driver subsystem stop the motor; the exact interface and fault-detection behavior must be confirmed during integration and firmware testing.
-
-The voltage regulator provides a regulated supply for compatible low-voltage circuitry. The microcontroller was preselected for the project and is excluded from the component comparison tables. Pushbuttons, resistors, capacitors, wires, and ordinary PCB materials are also excluded from the major-component comparison tables because they are supporting components rather than the primary components evaluated in this report.
+The purpose of the Optical Sensor Monitoring subsystem is to monitor movement of the dispensing mechanism and help identify potential faults in the Automatic Pet Food Dispenser. The subsystem interfaces with the PIC18F57Q43 Curiosity Nano microcontroller and the other parts of the dispenser. The major components considered in this report are a Vishay TCST1103 optical slot sensor, a Microchip MCP6004-I/P operational amplifier used for sensor signal conditioning, and a 5 V voltage regulator. The TCST1103 detects changes in an infrared beam when a slotted wheel or mechanical flag moves through the sensor. The sensor's phototransistor output is conditioned by the MCP6004-I/P circuit and is intended to be read by the PIC18F57Q43 through RA0/ADC1. The microcontroller can process these readings to help determine whether the dispensing mechanism is operating as expected. If a fault is detected, the subsystem is intended to request that the motor-driver subsystem stop the motor; the exact interface and fault-detection behavior must be confirmed during integration and firmware testing. The voltage regulator provides a regulated supply for compatible low-voltage circuitry. The microcontroller was preselected for the project and is excluded from the component comparison tables. Pushbuttons, resistors, capacitors, wires, and ordinary PCB materials are also excluded from the major-component comparison tables because they are supporting components rather than the primary components evaluated in this report.
 
 ## 2. Optical Slot Sensor Selection
 
@@ -64,7 +60,17 @@ The operational amplifier conditions the electrical signal from the TCST1103 opt
 
 **Choice: Microchip MCP6004-I/P.**
 
-The MCP6004-I/P is the preferred candidate because it operates from the planned 5 V supply and provides rail-to-rail input and output capability. These features are useful for conditioning the optical sensor signal before it is read by the PIC's RA0/ADC1 analog input. Its behavior when used as a comparator must still be verified against the manufacturer datasheet. Its low supply current is also beneficial for an embedded system. Although the device contains four amplifiers, the additional channels provide flexibility if more signal-conditioning stages are needed later. The LM358P has a lower unit cost, but its input and output limitations make it less suitable when the signal must use most of the 0–5 V range. The LM324N offers four amplifier channels but does not provide rail-to-rail output operation. The sensor biasing, amplifier configuration, and expected output-voltage range must be confirmed during circuit design. The conditioned analog output must remain within the PIC ADC input-voltage limits and provide a useful voltage range for the expected sensor conditions. The MCP6004 is an operational amplifier rather than a dedicated comparator, so its suitability for the switching behavior required by this block must be verified using its datasheet.
+**Manufacturer:** Microchip Technology
+
+**Part number:** MCP6004-I/P
+
+**Estimated unit cost:** $0.59
+
+**Package:** 14-pin through-hole
+
+**Supplier:** DigiKey
+
+The Microchip MCP6004-I/P is the preferred operational amplifier because it operates from the planned 5 V supply and provides rail-to-rail input and output capability. These features make it suitable for conditioning the optical sensor signal before it reaches the PIC18F57Q43 through RA0/ADC1. Its low supply current is also beneficial for the dispenser's electronic system. Although the device contains four operational amplifiers, the additional channels provide flexibility if more signal-conditioning stages are needed later. The LM358P has a lower unit cost, but its input and output voltage limitations make it less suitable when the signal needs to use a broad portion of the 0–5 V range. The LM324N also provides four amplifier channels but does not offer rail-to-rail output operation. The sensor biasing, amplifier configuration, and expected output-voltage range must be verified during circuit design to ensure the signal remains within the PIC's permitted ADC input range. Because the MCP6004 is an operational amplifier rather than a dedicated comparator, its suitability for the required signal-processing behavior must also be verified using the manufacturer datasheet.
 
 ## 4. 5 V Voltage Regulator Selection
 
@@ -82,7 +88,19 @@ The voltage regulator provides a stable 5 V supply for compatible active electro
 
 **Choice: STMicroelectronics L7805CV.**
 
-The L7805CV is the preferred candidate because it provides a fixed 5 V output, has a nominal 1.5 A output-current rating, uses a through-hole package, and has a lower unit price than the LM340AT-5.0/NOPB. The MC7805CTG has a lower unit cost, but its nominal 1 A current rating provides less capacity if the subsystem's final current requirement increases. The LM340AT-5.0/NOPB provides a similar nominal current rating to the L7805CV but has a higher unit cost. The regulator must be checked against the total system load and the external supply voltage.
+**Manufacturer:** STMicroelectronics
+
+**Part number:** L7805CV
+
+**Estimated unit cost:** $1.08
+
+**Output voltage:** 5 V
+
+**Nominal output current:** 1.5 A
+
+**Supplier:** DigiKey
+
+The STMicroelectronics L7805CV is the preferred voltage regulator because it provides a fixed 5 V output, has a nominal output-current rating of 1.5 A, and uses a through-hole package that is practical for prototyping and assembly. It also offers thermal and short-circuit protection features. The MC7805CTG has a lower unit cost, but its nominal 1 A output-current rating provides less capacity if the final system load increases. The LM340AT-5.0/NOPB offers a similar nominal current rating but has a higher unit cost. Since the L7805CV is a linear regulator, its power dissipation and operating temperature must be evaluated using the actual input voltage and total load current. A suitable heatsink may be required, and the final design must confirm that the regulator can safely supply the connected circuitry.
 
 ## 5. Pin and Interface Table
 
