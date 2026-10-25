@@ -90,13 +90,13 @@ The following table reflects the optical sensor monitoring subsystem connections
 
 | Component or interface | PIC pin / signal | Direction relative to PIC | Signal type | Purpose |
 |---|---|---|---|---|
-| **Optical slot sensor** | Output to MCP6004-I/P | Analog signal to op-amp | Analog (0–5 V, 1 pin) | Detects changes in the optical sensor signal. |
-| **Signal conditioning** | RA0 / ADC1 | Input | Analog (0–5 V, 1 pin) | Conditions the optical sensor signal before it reaches the PIC's ADC input. |
-| **Debugging LED** | RD0 | Output | Digital (5 V, 1 pin) | Provides a visual indicator for the subsystem. |
-| **Debugging Button** | RD1 | Input | Digital (5 V, 1 pin) | Provides a button input for testing and debugging. |
-| **Status LED** | RD2 | Output | Digital (5 V, 1 pin) | Provides a second visual indicator for the subsystem. |
+| **Optical slot sensor - TCST1103** | Output to MCP6004-I/P | Analog signal to op-amp | Analog (0–5 V, 1 pin) | Detects changes in the optical sensor signal. |
+| **Signal conditioning - MCP6004-I/P** | RA0 / ADC1 | Input | Analog (0–5 V, 1 pin) | Conditions the optical sensor signal before it reaches the PIC's ADC input. |
+| **Debugging LED - 151051RS11000** | RD0 | Output | Digital (5 V, 1 pin) | Provides a visual indicator during testing and debugging. |
+| **Debugging Button - B3F-4055** | RD1 | Input | Digital (5 V, 1 pin) | Provides a button input for testing and debugging. |
+| **Status LED - 151051RS11000** | RD2 | Output | Digital (5 V, 1 pin) | Indicates a potential fault detected by the subsystem. |
 | **Connector 1** | Pin 7 → RA1 | Input | Analog (0–5 V, 1 pin) | Interface to other subsystems. |
-| **Power interface** | +5 V | Supply | DC power | Supplies the regulated 5 V rail shown in the block diagram. |
+| **Power interface - LM7805CV** | +5 V | Supply | DC power | Supplies the regulated 5 V rail shown in the block diagram. |
 | **Ground interface** | GND | Return | DC power return | Provides the common electrical reference for the connected circuitry. |
 
 ## 6. Final Component Selection Summary
