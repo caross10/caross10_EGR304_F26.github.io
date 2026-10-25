@@ -1,38 +1,56 @@
-# Individual Component Selection
+# Component Selection
 
-## Automatic Pet Food Dispenser — Timer/Scheduler Subsystem
+## Automatic Pet Food Dispenser — Optical Sensor Monitoring Subsystem
 
 **Student:** Caleb Ross  
 
 **Project:** Automatic Pet Food Dispenser  
 
-**Subsystem:** Timer/Scheduler
+**Subsystem:** Optical Sensor Monitoring and Fault Detection
 
 ## 1. Introduction
 
-The purpose of the Timer/Scheduler subsystem is to generate and condition timing signals for the Automatic Pet Food Dispenser. The subsystem interfaces with the PIC18F57Q43 Curiosity Nano microcontroller and other parts of the dispenser to support the timing and control functions required by the design. The major components considered in this report are a clock/timer integrated circuit, an MCP6004-I/P operational amplifier used in the comparator stage, and a 5 V voltage regulator. In the block diagram, the timer provides an analog timing signal to the comparator stage, which produces a digital output for the PIC18F57Q43. The voltage regulator provides a regulated supply for the subsystem. The microcontroller was preselected for the project and is excluded from the component comparison tables. Pushbuttons, resistors, capacitors, wires, and ordinary PCB materials are also excluded because they are not considered major components under the assignment requirements.
+The purpose of the Optical Sensor Monitoring subsystem is to monitor movement of the dispensing mechanism and help identify potential faults in the Automatic Pet Food Dispenser. The subsystem interfaces with the PIC18F57Q43 Curiosity Nano microcontroller and the other parts of the dispenser. The major components considered in this report are a Vishay TCST1103 optical slot sensor, a Microchip MCP6004-I/P operational amplifier used for sensor signal conditioning, and a 5 V voltage regulator.
 
-## 2. Clock/Timer Selection
+The TCST1103 detects changes in an infrared beam when a slotted wheel or mechanical flag moves through the sensor. The sensor's phototransistor output is conditioned by the MCP6004-I/P circuit and is intended to be read by the PIC18F57Q43 through RA0/ADC1. The microcontroller can process these readings to help determine whether the dispensing mechanism is operating as expected. If a fault is detected, the subsystem is intended to request that the motor-driver subsystem stop the motor; the exact interface and fault-detection behavior must be confirmed during integration and firmware testing.
 
-The clock/timer generates the timing waveform used by the Timer/Scheduler subsystem. The candidates were compared based on supply voltage, power consumption, timing flexibility, operating frequency, package type, and ease of implementation.
+The voltage regulator provides a regulated supply for compatible low-voltage circuitry. The microcontroller was preselected for the project and is excluded from the component comparison tables. Pushbuttons, resistors, capacitors, wires, and ordinary PCB materials are also excluded from the major-component comparison tables because they are supporting components rather than the primary components evaluated in this report.
 
-### Table 1. Clock/Timer Candidates
+## 2. Optical Slot Sensor Selection
+
+**Subsystem: Position and Rotation Detection**
+
+The optical slot sensor will detect movement of the dispensing mechanism in our Automatic Pet Food Dispenser. A rotating slotted wheel or mechanical flag will interrupt the infrared beam, allowing the system to monitor movement. The sensor output will be sent through the op-amp signal-conditioning circuit before reaching the PIC18F57Q43 Curiosity Nano.
+
+### Table 1. Optical Slot Sensor Candidates
 
 | Solution | Advantages | Disadvantages |
 |---|---|---|
-| **Option 1: Texas Instruments LM555CN/NOPB** — [DigiKey product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM555CN-NOPB/6575).<br><img src="https://caross10.github.io/caross10_EGR304_F26.github.io/02-Component-Selection/LM555CN.jpg" alt="LM555CN timer" width="150"> **Unit price:** approximately $1.44. **Stock:** 14,800 units listed in the retrieved listing. | - The 8-pin through-hole package is easy to use for breadboard prototyping and PCB assembly.<br>- Operates from 4.5 V to 16 V, making it compatible with a 5 V supply.<br>- Supports monostable and astable configurations for one-shot timing or repeating oscillation.<br>- Widely documented and suitable for basic timing applications. | - Typical supply current is higher than that of CMOS timer alternatives.<br>- The minimum operating voltage is 4.5 V.<br>- Timing accuracy depends on external resistor and capacitor tolerances.<br>- Does not independently maintain the time of day or generate a precision analog ramp without additional circuitry. |
-| **Option 2: Texas Instruments TLC555CP** — [DigiKey product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/TLC555CP/277502).<br><img src="https://caross10.github.io/caross10_EGR304_F26.github.io/02-Component-Selection/TLC555CP.jpg" alt="TLC555CP timer" width="150"> **Unit price:** approximately $1.40. **Stock:** 13,095 units listed in the retrieved listing. | - Operates from 2 V to 15 V and is compatible with the 5 V supply.<br>- CMOS design provides substantially lower supply current than a conventional bipolar 555 timer.<br>- Through-hole 8-pin package simplifies prototyping and assembly.<br>- Supports monostable and astable operation.<br>- Suitable for low-power timing circuits. | - Requires external timing components.<br>- Timing accuracy depends on the resistor, capacitor, and operating conditions.<br>- A digital output does not directly provide a linear analog ramp.<br>- Costs slightly more than some basic bipolar timer alternatives. |
-| **Option 3: Texas Instruments NE555P** — [DigiKey product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/NE555P/277057).<br><img src="https://caross10.github.io/caross10_EGR304_F26.github.io/02-Component-Selection/NE555P.png" alt="NE555P timer" width="150"> **Unit price:** approximately $0.59. **Stock:** 50,761 units listed in the retrieved listing. | - Lower unit cost than the other candidates.<br>- Through-hole 8-pin package is convenient for prototyping and soldering.<br>- Supports monostable and astable timing configurations.<br>- Operates from a supply voltage compatible with a 5 V system.<br>- Has manufacturer documentation and is widely used in basic timing circuits. | - Higher supply-current consumption than CMOS timer alternatives.<br>- Timing accuracy depends on external resistor and capacitor tolerances.<br>- The timing interval is affected by the selected external components.<br>- Does not independently maintain the time of day or provide a precision analog ramp without additional circuitry. |
+| **Option 1: Vishay TCST1103** — [DigiKey product page](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847) and [datasheet](https://www.vishay.com/en/product/83764/).<br><img src="https://caross10.github.io/caross10_EGR304_F26.github.io/02-Component-Selection/TCST1103.jpg" alt="TCST1103 optical slot sensor" width="150"> **Unit price:** approximately $1.48. **Slot width:** 3.1 mm. **Output:** phototransistor. | - 3.1 mm slot provides room for a small encoder wheel or mechanical flag.<br>- Through-hole package is easier to solder during prototyping and PCB assembly.<br>- Daylight-blocking filter helps reduce interference from ambient light.<br>- Lowest price among the three candidates.<br>- Phototransistor output can be used with an appropriate load resistor and signal-conditioning circuit. | - Requires an external current-limiting resistor for the infrared emitter.<br>- Phototransistor output requires a load/pull-up and signal-conditioning circuit.<br>- Sensor must be aligned with the moving mechanism.<br>- Mechanical flag or wheel must fit within the slot. |
+| **Option 2: Vishay TCST2103** — [DigiKey product page](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST2103/2354849) and [datasheet](https://www.vishay.com/docs/81147/tcst2103.pdf).<br>**Unit price:** approximately $1.84. **Slot width:** 3.1 mm. **Output:** phototransistor. | - Supports optical interruption sensing in a suitable circuit.<br>- Through-hole mounting is suitable for student PCB assembly.<br>- 3.1 mm slot supports mechanical interruption sensing.<br>- Phototransistor output is suitable for detecting movement and rotation. | - Higher price than the TCST1103.<br>- Requires external emitter and output circuitry.<br>- Mechanical alignment is still required. |
+| **Option 3: Omron EE-SX1103** — [DigiKey product page](https://www.digikey.com/en/products/detail/aratas-formerly-omron-components/EE-SX1103/355306) and [datasheet](https://omronfs.omron.com/en_US/ecb/products/pdf/en-ee_sx1103.pdf).<br>**Unit price:** approximately $1.75. **Slot width:** 2 mm. **Output:** phototransistor. | - Compact design can save PCB space.<br>- Through-hole mounting simplifies soldering.<br>- Narrow slot can support sensing with a thin mechanical flag. | - Narrower 2 mm slot requires more accurate mechanical alignment.<br>- Less clearance for a thicker rotating disk or flag.<br>- Requires external emitter and output circuitry. |
 
-### Final Clock/Timer Selection
+### Final Optical Slot Sensor Selection
 
-**Choice: Texas Instruments TLC555CP.**
+**Choice: Vishay TCST1103.**
 
-The TLC555CP is the preferred candidate because it provides the timing functions needed for the subsystem while consuming less supply current than conventional bipolar 555 timer alternatives. Its 2 V to 15 V operating range makes it compatible with the planned 5 V supply, and its through-hole package simplifies assembly and prototyping. The LM555CN/NOPB is another suitable candidate, but its higher supply-current consumption makes it less attractive for a low-power embedded system. The NE555P has the lowest unit cost of the three candidates and is a reasonable alternative when minimizing component cost is the main priority. The final timing resistor and capacitor values must be selected according to the required interval. The output waveform must also be verified against the signal-conditioning stage. A 555 timer produces a timing waveform, and its timing-capacitor voltage normally changes between internal threshold levels; it does not automatically produce a linear 0–5 V analog ramp.
+**Manufacturer:** Vishay Semiconductor
+
+**Part number:** TCST1103
+
+**Estimated unit cost:** $1.48
+
+**Slot width:** 3.1 mm
+
+**Output type:** Phototransistor
+
+**Supplier:** DigiKey
+
+The Vishay TCST1103 is the preferred optical slot sensor because it provides a good balance of performance, mechanical compatibility, ease of implementation, and cost. Its 3.1 mm sensing gap provides clearance for a thin slotted wheel or mechanical flag, while its through-hole package makes it practical to install and solder during prototyping. The sensor uses an infrared emitter and phototransistor, making it suitable for detecting interruptions caused by movement of the dispensing mechanism. Its daylight-blocking filter also helps reduce interference from surrounding light. The sensor requires an external current-limiting resistor for the infrared emitter and an appropriate load or pull-up circuit for the phototransistor. The conditioned sensor signal is intended to connect to the PIC18F57Q43 through RA0/ADC1. If the readings indicate an abnormal operating condition, the microcontroller is intended to request that the motor-driver subsystem stop the motor. The fault thresholds and stop-request interface must be confirmed during circuit integration and firmware testing. Compared with the other options, the TCST1103 offers similar sensing functionality at a lower unit price. Therefore, it is the preferred choice, provided the final mechanical design fits within its sensing gap.
 
 ## 3. Operational Amplifier Selection
 
-The Operational Amplifier receives the timer’s analog signal and produces a digital output for the PIC18F57Q43. The component must operate from the available supply voltage and provide input and output levels suitable for the intended signal. The candidates were compared based on supply-voltage compatibility, input/output voltage range, current consumption, package type, bandwidth, cost, and ease of assembly.
+The operational amplifier conditions the electrical signal from the TCST1103 optical slot sensor before it reaches the PIC18F57Q43 Curiosity Nano. The component must operate from the available supply voltage and provide input and output levels suitable for the intended signal. The candidates were compared based on supply-voltage compatibility, input/output voltage range, current consumption, package type, bandwidth, cost, and ease of assembly.
 
 ### Table 2. Operational Amplifier Candidates
 
@@ -46,11 +64,11 @@ The Operational Amplifier receives the timer’s analog signal and produces a di
 
 **Choice: Microchip MCP6004-I/P.**
 
-The MCP6004-I/P is the preferred candidate because it operates from the planned 5 V supply and provides rail-to-rail input and output capability. These features are useful in the comparator stage shown in the block diagram, where the analog timer signal is converted into a digital signal for the PIC. Its behavior when used as a comparator must still be verified against the manufacturer datasheet. Its low supply current is also beneficial for an embedded system. Although the device contains four amplifiers, the additional channels provide flexibility if more signal-conditioning stages are needed later. The LM358P has a lower unit cost, but its input and output limitations make it less suitable when the signal must use most of the 0–5 V range. The LM324N offers four amplifier channels but does not provide rail-to-rail output operation. The comparator threshold and input signal range must be confirmed during circuit design. The output must satisfy the PIC digital-input voltage specifications. The MCP6004 is an operational amplifier rather than a dedicated comparator, so its suitability for the switching behavior required by this block must be verified using its datasheet.
+The MCP6004-I/P is the preferred candidate because it operates from the planned 5 V supply and provides rail-to-rail input and output capability. These features are useful for conditioning the optical sensor signal before it is read by the PIC's RA0/ADC1 analog input. Its behavior when used as a comparator must still be verified against the manufacturer datasheet. Its low supply current is also beneficial for an embedded system. Although the device contains four amplifiers, the additional channels provide flexibility if more signal-conditioning stages are needed later. The LM358P has a lower unit cost, but its input and output limitations make it less suitable when the signal must use most of the 0–5 V range. The LM324N offers four amplifier channels but does not provide rail-to-rail output operation. The sensor biasing, amplifier configuration, and expected output-voltage range must be confirmed during circuit design. The conditioned analog output must remain within the PIC ADC input-voltage limits and provide a useful voltage range for the expected sensor conditions. The MCP6004 is an operational amplifier rather than a dedicated comparator, so its suitability for the switching behavior required by this block must be verified using its datasheet.
 
 ## 4. 5 V Voltage Regulator Selection
 
-The voltage regulator provides a stable 5 V supply for the subsystem's active electronics. The regulator must supply the required load current while remaining within its electrical and thermal limits. The candidates were compared based on output voltage, rated current, package type, protection features, cost, and thermal considerations.
+The voltage regulator provides a stable 5 V supply for compatible active electronics in the optical sensor monitoring subsystem. The regulator must supply the required load current while remaining within its electrical and thermal limits. The candidates were compared based on output voltage, rated current, package type, protection features, cost, and thermal considerations.
 
 ### Table 3. 5 V Voltage Regulator Candidates
 
@@ -68,44 +86,44 @@ The L7805CV is the preferred candidate because it provides a fixed 5 V output, h
 
 ## 5. Pin and Interface Table
 
-The following table follows the Timer/Scheduler block diagram. Pin directions are described relative to the PIC18F57Q43. Where the diagram does not show a specific physical pin assignment, the table does not invent one.
+The following table reflects the optical sensor monitoring subsystem. Pin directions are described relative to the PIC18F57Q43. The sensor's conditioned output is intended to be read as an analog signal through RA0/ADC1. Any motor-stop request and external connector assignments must be confirmed against the final team interface definition.
 
 | Component or interface | PIC pin / signal | Direction relative to PIC | Signal type | Purpose |
 |---|---|---|---|---|
-| **Clock/Timer — TLC555CP** | Analog timing signal | Output to comparator | Analog, 0–5 V | Generates the analog timing signal supplied to the comparator stage. |
-| **Comparator — MCP6004-I/P** | RA0 / ADC1 | Input | Digital, nominal 5 V | Receives the comparator's digital output for processing by the PIC. |
-| **Button 1 — Aratas B3F-4055** | RA1 / Digital I/O | Input | Digital | Detects a user button press through the PIC's RA1 digital I/O pin. |
-| **PWM interface** | RA2 / PWM | Output | Digital/PWM | Provides a pulse-width-modulated output if required by the final implementation. |
-| **Digital I/O interface** | RA1, RB2, RC4, RD0, RD1 | Input/output | Digital | Provides the digital I/O signals identified in the block diagram for subsystem control and communication. |
-| **Connector 1** | External subsystem interface | Input/output | Digital and analog | Provides the interface between the Timer/Scheduler subsystem and another subsystem. The eight-pin connector has four digital positions and four analog positions. |
-| **Connector 2** | RD0 / Digital I/O | Input/output | Digital and analog | Provides an additional subsystem interface. The eight-pin connector has four digital positions and four analog positions. |
-| **Power interface** | +5 V | Supply | DC power | Supplies the regulated logic rail to the subsystem. |
-| **Ground interface** | GND | Return | DC power return | Provides the common electrical reference for the circuit. |
+| **Optical slot sensor — TCST1103** | Conditioned sensor output to RA0 / ADC1 | Input | Analog voltage | Reads the conditioned sensor signal so the PIC can monitor changes caused by movement of the dispensing mechanism. |
+| **Signal conditioning — MCP6004-I/P** | Analog output to RA0 / ADC1 | Output from conditioning circuit to PIC | Analog voltage | Conditions the phototransistor signal for the PIC's ADC input. The output must remain within the ADC's permitted voltage range. |
+| **Button 1** | RA1 / Digital I/O | Input | Digital | Supports testing and debugging through a user button. |
+| **Status LED** | PIC digital output pin to be confirmed | Output | Digital | Indicates a potential fault or issue detected by the subsystem. |
+| **Debugging LED** | PIC digital output pin to be confirmed | Output | Digital | Provides a visual indication during development and testing. |
+| **Motor-stop request** | Team interface pin to be confirmed | Output from this subsystem | Digital control signal, if selected by the team | Intended to request that the motor-driver subsystem stop the motor when a fault is detected. The final signal and connector pin must be confirmed with the team. |
+| **Connector 1** | External subsystem interface | Input/output as defined by team | To be confirmed | Provides the connection between this subsystem and the other team subsystems. Pin assignments and signal types must follow the final team interface definition. |
+| **Connector 2, pin 2** | RD0 / Digital I/O | As defined by the final circuit | Digital | Provides the documented connection to PIC digital I/O. Confirm the signal direction and function in the final schematic. |
+| **Power interface** | +5 V | Supply | DC power | Supplies the regulated logic rail to compatible circuitry. |
+| **Ground interface** | GND | Return | DC power return | Provides the common electrical reference for connected circuitry. |
 
 ## 6. Final Component Selection Summary
 
 | Major component | Selected candidate | Main reason for selection |
 |---|---|---|
-| **Clock/Timer** | Texas Instruments TLC555CP | Low supply current, 5 V compatibility, through hole package, and adequate timing capability. |
-| **Comparator stage / Operational Amplifier** | Microchip MCP6004-I/P | Rail to rail input/output operation, low voltage compatibility, and low supply current. |
-| **5 V Voltage Regulator** | STMicroelectronics L7805CV | Fixed 5 V output, nominal 1.5 A capability, through hole package, and favorable cost and availability. |
+| **Optical slot sensor** | Vishay TCST1103 | 3.1 mm slot, through-hole package, suitable for detecting movement through interruption of an infrared beam, and favorable cost. |
+| **Signal conditioning / Operational Amplifier** | Microchip MCP6004-I/P | Compatible with a 5 V supply and provides rail-to-rail input/output capability for conditioning the optical sensor signal. Its actual circuit behavior must be verified. |
+| **5 V Voltage Regulator** | STMicroelectronics L7805CV | Fixed 5 V output, nominal 1.5 A capability, through-hole package, and favorable cost and availability. |
 
 ## 7. Conclusion
 
-The component-selection process compared three commercially available solutions for each major component category. The candidates were evaluated based on electrical specifications, compatibility with the 5 V supply, current consumption, package type, cost, and availability of manufacturer documentation. The TLC555CP is the preferred timer because it offers low supply-current consumption and flexible timing configurations. The MCP6004-I/P is the preferred component for the comparator stage because its rail to rail input and output capability is useful for converting the timer signal into a digital signal for the PIC, subject to verification of its suitability for comparator operation. The L7805CV is the preferred regulator because it provides a fixed 5 V output and a nominal 1.5 A output-current rating in a practical through-hole package. The final implementation must verify the required timing interval, signal waveform, comparator threshold and switching behavior, regulator thermal dissipation, and total power consumption. These checks are necessary to ensure that the selected components work together correctly and meet the electrical requirements of the Automatic Pet Food Dispenser.
-
+The component-selection process compared commercially available options for the major components in the Optical Sensor Monitoring subsystem. The candidates were evaluated based on electrical specifications, compatibility with the 5 V supply, package type, cost, and availability of manufacturer documentation. The Vishay TCST1103 is the preferred optical sensor because it provides a 3.1 mm slot, a phototransistor output, and a practical through-hole package at a favorable cost. The MCP6004-I/P is retained for sensor signal conditioning because it supports the planned 5 V supply and provides rail-to-rail input and output capability. The STMicroelectronics L7805CV remains the preferred regulator because it provides a fixed 5 V output and a nominal 1.5 A output-current rating in a through-hole package. The final implementation must verify the optical sensor's emitter resistor and phototransistor load, the op-amp circuit and signal range, the PIC ADC voltage limits, the regulator's thermal dissipation, and the total power consumption. The team must also confirm the interface and signal used to request a motor stop if a fault is detected. These checks are necessary to ensure that the selected components work together correctly in the Automatic Pet Food Dispenser.
 
 ## 8. References
 
 The product pages below provide manufacturer information and datasheets for the components compared in this report. Reference prices and stock quantities are snapshots from the listings used during preparation and may change.
 
-1. Texas Instruments, [LM555CN/NOPB product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM555CN-NOPB/6575).
-2. Texas Instruments, [TLC555CP product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/TLC555CP/277502).
-3. Texas Instruments, [NE555P product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/NE555P/277057).
-4. Microchip Technology, [MCP6004-I/P product page and datasheet](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060).
-5. Texas Instruments, [LM358P product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM358P/277042).
-6. Texas Instruments, [LM324N product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM324N/277627).
-7. STMicroelectronics, [L7805CV product page and datasheet](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964).
-8. onsemi, [MC7805CTG product page and datasheet](https://www.digikey.com/en/products/detail/onsemi/MC7805CTG/919333).
-9. Texas Instruments, [LM340AT-5.0/NOPB product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM340AT-5-0-NOPB/148173).
-
+1. Vishay Semiconductor, [TCST1103 product page and datasheet](https://www.vishay.com/en/product/83764/).
+2. Vishay Semiconductor, [TCST1103 product page on DigiKey](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847).
+3. Vishay Semiconductor, [TCST2103 product page and datasheet](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST2103/2354849).
+4. Omron, [EE-SX1103 product page and datasheet](https://omronfs.omron.com/en_US/ecb/products/pdf/en-ee_sx1103.pdf).
+5. Microchip Technology, [MCP6004-I/P product page and datasheet](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060).
+6. Texas Instruments, [LM358P product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM358P/277042).
+7. Texas Instruments, [LM324N product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM324N/277627).
+8. STMicroelectronics, [L7805CV product page and datasheet](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964).
+9. onsemi, [MC7805CTG product page and datasheet](https://www.digikey.com/en/products/detail/onsemi/MC7805CTG/919333).
+10. Texas Instruments, [LM340AT-5.0/NOPB product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM340AT-5-0-NOPB/148173).
