@@ -91,13 +91,11 @@ The following table reflects the optical sensor monitoring subsystem. Pin direct
 | Component or interface | PIC pin / signal | Direction relative to PIC | Signal type | Purpose |
 |---|---|---|---|---|
 | **Optical slot sensor — TCST1103** | Conditioned sensor output to RA0 / ADC1 | Input | Analog voltage | Reads the conditioned sensor signal so the PIC can monitor changes caused by movement of the dispensing mechanism. |
-| **Signal conditioning — MCP6004-I/P** | Analog output to RA0 / ADC1 | Output from conditioning circuit to PIC | Analog voltage | Conditions the phototransistor signal for the PIC's ADC input. The output must remain within the ADC's permitted voltage range. |
-| **Button 1** | RA1 / Digital I/O | Input | Digital | Supports testing and debugging through a user button. |
-| **Status LED** | PIC digital output pin to be confirmed | Output | Digital | Indicates a potential fault or issue detected by the subsystem. |
-| **Debugging LED** | PIC digital output pin to be confirmed | Output | Digital | Provides a visual indication during development and testing. |
-| **Motor-stop request** | Team interface pin to be confirmed | Output from this subsystem | Digital control signal, if selected by the team | Intended to request that the motor-driver subsystem stop the motor when a fault is detected. The final signal and connector pin must be confirmed with the team. |
-| **Connector 1** | External subsystem interface | Input/output as defined by team | To be confirmed | Provides the connection between this subsystem and the other team subsystems. Pin assignments and signal types must follow the final team interface definition. |
-| **Connector 2, pin 2** | RD0 / Digital I/O | As defined by the final circuit | Digital | Provides the documented connection to PIC digital I/O. Confirm the signal direction and function in the final schematic. |
+| **Signal conditioning — MCP6004-I/P** | RA0 / ADC1 | Output from conditioning circuit to PIC | Analog voltage | Conditions the phototransistor signal for the PIC's ADC input. The output must remain within the ADC's permitted voltage range. |
+| **Debugging Button** | RD1 | Output | Digital | Supports testing and debugging through a user button. |
+| **Status LED** | RD2 | Output | Digital | Indicates a potential fault or issue detected by the subsystem. |
+| **Debugging LED** | RD0 | Output | Digital | Provides a visual indication during development and testing. |
+| **Connector 1** | RA1 | Input | To be confirmed | Provides the connection between this subsystem and the other team subsystems. Pin assignments and signal types must follow the final team interface definition. |
 | **Power interface** | +5 V | Supply | DC power | Supplies the regulated logic rail to compatible circuitry. |
 | **Ground interface** | GND | Return | DC power return | Provides the common electrical reference for connected circuitry. |
 
@@ -120,7 +118,7 @@ The product pages below provide manufacturer information and datasheets for the 
 1. Vishay Semiconductor, [TCST1103 product page and datasheet](https://www.vishay.com/en/product/83764/).
 2. Vishay Semiconductor, [TCST1103 product page on DigiKey](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847).
 3. Vishay Semiconductor, [TCST2103 product page and datasheet](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST2103/2354849).
-4. Omron, [EE-SX1103 product page and datasheet](https://omronfs.omron.com/en_US/ecb/products/pdf/en-ee_sx1103.pdf).
+4. Omron, [EE-SX1103 product page and datasheet](https://www.digikey.com/en/products/detail/aratas-formerly-omron-components/EE-SX1103/355306).
 5. Microchip Technology, [MCP6004-I/P product page and datasheet](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060).
 6. Texas Instruments, [LM358P product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM358P/277042).
 7. Texas Instruments, [LM324N product page and datasheet](https://www.digikey.com/en/products/detail/texas-instruments/LM324N/277627).
