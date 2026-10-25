@@ -95,7 +95,7 @@ The following table reflects the optical sensor monitoring subsystem connections
 | **Debugging LED** | RD0 | Output | Digital (5 V, 1 pin) | Provides a visual indicator for the subsystem. |
 | **Debugging Button** | RD1 | Input | Digital (5 V, 1 pin) | Provides a button input for testing and debugging. |
 | **Status LED** | RD2 | Output | Digital (5 V, 1 pin) | Provides a second visual indicator for the subsystem. |
-| **Connector 1** | Pin 7 → RA1 | Input | Interface to other subsystems | Analog (0–5 V, 1 pin) | Provides the external connections shown in the block diagram, including digital and analog signals. |
+| **Connector 1** | Pin 7 → RA1 | Input | Analog (0–5 V, 1 pin) | Interface to other subsystems. |
 | **Power interface** | +5 V | Supply | DC power | Supplies the regulated 5 V rail shown in the block diagram. |
 | **Ground interface** | GND | Return | DC power return | Provides the common electrical reference for the connected circuitry. |
 
