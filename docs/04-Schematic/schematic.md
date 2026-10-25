@@ -4,7 +4,7 @@ title: Schematics
 
 ## Overview
 
-This schematic is designed to support the timer/scheduler subsystem for the Automatic Pet Food Dispenser. It includes the TLC555 timer, MCP6004 operational amplifier, and PIC18F57Q43 Curiosity Nano board. The circuit includes the power supply components and supporting resistors and capacitors needed for operation, while the PIC microcontroller processes the timer signal as part of the subsystem's functionality.
+This schematic is designed to support the optical sensor monitoring and fault detection subsystem for the Automatic Pet Food Dispenser. It includes the TCST1103 optical slot sensor, MCP6004 operational amplifier, and associated power supply components, resistors, and capacitors. The optical sensor detects movement of the dispensing mechanism, while the MCP6004 buffers the sensor signal before passing it to the PIC18F57Q43 Curiosity Nano board for monitoring and fault detection.
 
 ![schematic](Subsystem%20Schematic%20Design.png)
 
