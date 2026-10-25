@@ -86,18 +86,18 @@ The L7805CV is the preferred candidate because it provides a fixed 5 V output, h
 
 ## 5. Pin and Interface Table
 
-The following table reflects the optical sensor monitoring subsystem. Pin directions are described relative to the PIC18F57Q43. The sensor's conditioned output is intended to be read as an analog signal through RA0/ADC1. Any motor-stop request and external connector assignments must be confirmed against the final team interface definition.
+The following table reflects the optical sensor monitoring subsystem connections shown in the Team 101 block diagram. Pin directions are described relative to the PIC18F57Q43 Curiosity Nano.
 
 | Component or interface | PIC pin / signal | Direction relative to PIC | Signal type | Purpose |
 |---|---|---|---|---|
-| **Optical slot sensor — TCST1103** | Conditioned sensor output to RA0 / ADC1 | Input | Analog voltage | Reads the conditioned sensor signal so the PIC can monitor changes caused by movement of the dispensing mechanism. |
-| **Signal conditioning — MCP6004-I/P** | RA0 / ADC1 | Output from conditioning circuit to PIC | Analog voltage | Conditions the phototransistor signal for the PIC's ADC input. The output must remain within the ADC's permitted voltage range. |
-| **Debugging Button** | RD1 | Output | Digital | Supports testing and debugging through a user button. |
-| **Status LED** | RD2 | Output | Digital | Indicates a potential fault or issue detected by the subsystem. |
-| **Debugging LED** | RD0 | Output | Digital | Provides a visual indication during development and testing. |
-| **Connector 1** | RA1 | Input | To be confirmed | Provides the connection between this subsystem and the other team subsystems. Pin assignments and signal types must follow the final team interface definition. |
-| **Power interface** | +5 V | Supply | DC power | Supplies the regulated logic rail to compatible circuitry. |
-| **Ground interface** | GND | Return | DC power return | Provides the common electrical reference for connected circuitry. |
+| **Optical slot sensor** | Output to MCP6004-I/P | Analog signal to op-amp | Analog (0–5 V, 1 pin) | Detects changes in the optical sensor signal. |
+| **Signal conditioning** | RA0 / ADC1 | Input | Analog (0–5 V, 1 pin) | Conditions the optical sensor signal before it reaches the PIC's ADC input. |
+| **Debugging LED** | RD0 | Output | Digital (5 V, 1 pin) | Provides a visual indicator for the subsystem. |
+| **Debugging Button** | RD1 | Input | Digital (5 V, 1 pin) | Provides a button input for testing and debugging. |
+| **Status LED** | RD2 | Output | Digital (5 V, 1 pin) | Provides a second visual indicator for the subsystem. |
+| **Connector 1** | Pins 1–8 | Interface to other subsystems | Digital and analog | Provides the external connections shown in the block diagram, including digital and analog signals. |
+| **Power interface** | +5 V | Supply | DC power | Supplies the regulated 5 V rail shown in the block diagram. |
+| **Ground interface** | GND | Return | DC power return | Provides the common electrical reference for the connected circuitry. |
 
 ## 6. Final Component Selection Summary
 
