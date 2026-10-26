@@ -19,7 +19,7 @@ for<br>
 ### Project Summary
 
 * The Automatic Pet Food Dispenser is designed to automate pet food dispensing through electronic timing, sensing, and control. The system uses the PIC18F57Q43 Curiosity Nano microcontroller and supporting electronic components to provide timing, optical sensor monitoring, signal conditioning, and control functions. My work focuses on the Optical Sensor Monitoring and Fault Detection subsystem and selecting components that meet the design's electrical and power requirements.
-* For additional information about the overall project, see the [team report](https://embedded-systems-design.github.io/EGR304TeamTemplate/).
+* For additional information about the overall project, see the [team report](https://egr304-2026-f-101.github.io/).
 
 ### My Contribution
 
