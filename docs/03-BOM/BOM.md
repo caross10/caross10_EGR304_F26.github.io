@@ -16,23 +16,27 @@ This section presents the Bill of Materials (BOM) for Team 101's Optical Sensor 
 
 | **Part Name/Description** | **Unit Qty** | **Per Unit Cost** | **Total Cost** | **Manufacturer** | **Manufacturer Part #** | **Supplier** | **Vendor Part Number** | **Datasheet Link** | **Schematic Reference Designators** |
 |:---|:---:|---:|---:|:---|:---|:---|:---|:---|:---|
-| Optical Slot Sensor, Infrared Emitter and Phototransistor, 3.1 mm Slot Width, Through-Hole Package | 1 | $1.48 | $1.48 | Vishay Semiconductor | TCST1103 | DigiKey | Verify current listing | [Datasheet](https://www.vishay.com/docs/83752/tcst1103.pdf) | Photo Sensor (verify) |
-| Quad Operational Amplifier, Rail-to-Rail Input/Output, 1 MHz Gain-Bandwidth Product, DIP-14 Package | 1 | $0.59 | $0.59 | Microchip Technology | MCP6004-I/P | DigiKey | Verify current listing | [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/20001733L.pdf) | U? (verify) |
-| Fixed 5 V Linear Voltage Regulator, 1.5 A Nominal Output Current, TO-220 Package | 1 | $1.08 | $1.08 | STMicroelectronics | L7805CV | DigiKey | Verify current listing | [Datasheet](https://www.st.com/resource/en/datasheet/l78.pdf) | U? (verify) |
-| Red LED, Through-Hole Indicator, 151051RS11000 Series | 1 | $0.00 | $0.00 | Verify manufacturer | 151051RS11000 | Already owned | N/A | Verify datasheet | D2 (verify) |
-| Debugging LED, Through-Hole Indicator, 151051RS11000 Series | 1 | $0.00 | $0.00 | Verify manufacturer | 151051RS11000 | Already owned | N/A | Verify datasheet | D1 (verify) |
-| Momentary Tactile Pushbutton Switch, Through-Hole Package | 1 | $0.00 | $0.00 | Omron | B3F-4055 | Already owned | N/A | Verify datasheet | SW1 |
-| Fixed Resistor, 220 Ω, Optical Sensor Infrared Emitter Current Limiting | 1 | $0.00 | $0.00 | Verify manufacturer | TBD | Already owned | N/A | N/A | R2 |
-| Fixed Resistor, 10 kΩ, Phototransistor Load/Pull-Up | 1 | $0.00 | $0.00 | Verify manufacturer | TBD | Already owned | N/A | N/A | R3 |
-| Fixed Resistor, 100 Ω, LED Current Limiting | 2 | $0.00 | $0.00 | Verify manufacturer | TBD | Already owned | N/A | N/A | R4, R5 (verify) |
-| Ceramic Capacitor, 0.33 µF, Voltage Regulator Input Filtering | 1 | $0.00 | $0.00 | Verify manufacturer | TBD | Already owned | N/A | N/A | C1 |
-| Ceramic Capacitor, 0.1 µF, Voltage Regulator Output Filtering | 1 | $0.00 | $0.00 | Verify manufacturer | TBD | Already owned | N/A | N/A | C2 |
-| Ceramic Capacitor, 0.1 µF, Microcontroller Bypass | 1 | $0.00 | $0.00 | Verify manufacturer | TBD | Already owned | N/A | N/A | C5 |
-| Ceramic Capacitor, 0.1 µF, Optical Sensor Supply Bypass | 1 | $0.00 | $0.00 | Verify manufacturer | TBD | Already owned | N/A | N/A | C3 |
-| Fuse, 0.5 A, Power Supply Input Protection | 1 | $0.00 | $0.00 | Verify manufacturer | TBD | Already owned | N/A | N/A | F1 |
-| DC Barrel Jack, Through-Hole Power Connector | 1 | $0.00 | $0.00 | Verify manufacturer | PJ-102AH (verify) | Already owned | N/A | Verify datasheet | J1 |
-| Pin Header Connector, 1 × 8, Subsystem Interface | 1 | $0.00 | $0.00 | Verify manufacturer | Conn_01x08_Pin | Already owned | N/A | N/A | J2 |
-| PIC18F57Q43 Curiosity Nano Development Board, Microcontroller and Digital/Analog I/O | 1 | $0.00 | $0.00 | Microchip Technology | PIC18F57Q43 Curiosity Nano | Already owned | N/A | [Manufacturer documentation](https://www.microchip.com/) | U2 (verify) |
+| Optical Slot Sensor, Infrared Emitter and Phototransistor, 3.1 mm Slot Width, Through-Hole Package | 1 | $1.48 | $1.48 | Vishay Semiconductor | TCST1103 | [DigiKey](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847) | TCST1103-ND | [Datasheet](https://www.vishay.com/docs/83752/tcst1103.pdf) | Photo Sensor |
+| Quad Operational Amplifier, Rail-to-Rail Input/Output, 1 MHz Gain-Bandwidth Product, DIP-14 Package | 1 | $0.59 | $0.59 | Microchip Technology | MCP6004-I/P | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) | MCP6004-I/P-ND | [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/20001733L.pdf) | MCP6004-I/P |
+| Fixed 5 V Linear Voltage Regulator, TO-220 Package, 1.5 A Nominal Output Current | 1 | $1.08 | $1.08 | STMicroelectronics | L7805CV | [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964) | 497-1443-5-ND | [Datasheet](https://www.st.com/resource/en/datasheet/l78.pdf) | U1 |
+| Fixed Resistor, 100 Ω, LED Current Limiting | 2 | $0.00 | $0.00 | Generic | 100 Ω | [DigiKey](https://www.digikey.com/en/products/filter/chip-resistor-surface-mount/52) | N/A | N/A | R1, R4, R5 (3 resistors shown) |
+| Fixed Resistor, 220 Ω, Optical Sensor Emitter Current Limiting | 1 | $0.00 | $0.00 | Generic | 220 Ω | [DigiKey](https://www.digikey.com/en/products/filter/through-hole-resistors/53) | N/A | N/A | R2 |
+| Fixed Resistor, 10 kΩ, Phototransistor Load | 1 | $0.00 | $0.00 | Generic | 10 kΩ | [DigiKey](https://www.digikey.com/en/products/filter/through-hole-resistors/53) | N/A | N/A | R3 |
+| Ceramic Capacitor, 0.33 µF, Voltage Regulator Input Filtering | 1 | $0.00 | $0.00 | Generic | 0.33 µF | [DigiKey](https://www.digikey.com/en/products/filter/ceramic-capacitors/60) | N/A | N/A | C1 |
+| Ceramic Capacitor, 0.1 µF, Voltage Regulator Output Filtering | 1 | $0.00 | $0.00 | Generic | 0.1 µF | [DigiKey](https://www.digikey.com/en/products/filter/ceramic-capacitors/60) | N/A | N/A | C2 |
+| Ceramic Capacitor, 0.1 µF, Optical Sensor Supply Bypass | 1 | $0.00 | $0.00 | Generic | 0.1 µF | [DigiKey](https://www.digikey.com/en/products/filter/ceramic-capacitors/60) | N/A | N/A | C3 |
+| Ceramic Capacitor, 0.1 µF, Pushbutton Supply Bypass | 1 | $0.00 | $0.00 | Generic | 0.1 µF | [DigiKey](https://www.digikey.com/en/products/filter/ceramic-capacitors/60) | N/A | N/A | C4 |
+| Ceramic Capacitor, 0.1 µF, Microcontroller Bypass | 1 | $0.00 | $0.00 | Generic | 0.1 µF | [DigiKey](https://www.digikey.com/en/products/filter/ceramic-capacitors/60) | N/A | N/A | C5 |
+| Red LED, Through-Hole Indicator | 2 | $0.00 | $0.00 | Würth Elektronik | 151051RS11000 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/151051RS11000/4490012) | 732-5016-ND | [Product information](https://www.we-online.com/en/components/products/151051RS11000) | D1, D2 |
+| Momentary Tactile Pushbutton Switch, Through-Hole Package | 1 | $0.00 | $0.00 | Omron | B3F-4055 | [DigiKey](https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3F-4055/31799) | SW414-ND | [Datasheet](https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf) | SW1 |
+| Fuse, 0.5 A, Power Supply Input Protection | 1 | $0.00 | $0.00 | Generic | 0.5 A | [DigiKey](https://www.digikey.com/en/products/filter/fuses/139) | N/A | N/A | F1 |
+| DC Barrel Jack, Through-Hole Power Connector | 1 | $0.00 | $0.00 | Same Sky | PJ-102AH | [DigiKey](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-102AH/408448) | CP-102AH-ND | [Datasheet](https://www.sameskydevices.com/product/resource/pj-102ah.pdf) | J1 |
+| 1 × 8 Pin Header, Through-Hole Subsystem Connector | 1 | $0.00 | $0.00 | Generic | Conn_01x08_Pin | [DigiKey](https://www.digikey.com/en/products/filter/rectangular-connectors-headers-male-pins/314) | N/A | N/A | J2 |
+| PIC18F57Q43 Curiosity Nano Development Board | 1 | $0.00 | $0.00 | Microchip Technology | PIC18F57Q43 Curiosity Nano | [DigiKey](https://www.digikey.com/) | N/A | [Microchip documentation](https://www.microchip.com/en-us/product/PIC18F57Q43) | U2 |
+
+**Estimated new-purchase cost:** $1.48
+
+**Note:** Components already owned are listed at $0.00 additional cost. The resistor inventory follows the three 100 Ω resistors visible in the schematic (R1, R4, and R5), plus R2 and R3. Generic resistor and capacitor links lead to DigiKey component categories because the schematic specifies electrical values rather than exact manufacturer part numbers.
 
 ## Cost Summary
 
@@ -52,10 +56,4 @@ The reference prices for the three selected major components are:
 
 The combined reference cost of these three major components is $3.15. This amount is not the additional purchasing cost because the operational amplifier and voltage regulator are already owned.
 
-## Notes
 
-- A unit cost of $0.00 indicates that the component is already owned and does not represent its retail value.
-- Prices are estimates from the component selection report and may change with supplier pricing and availability.
-- Verify manufacturer details, supplier part numbers, quantities, and schematic reference designators against the final KiCad schematic and actual component packaging.
-- The PIC18F57Q43 Curiosity Nano is included in the complete component inventory even though it was preselected for the project.
-- The subsystem displays an error message and illuminates the red status LED when a fault is detected. It does not directly request that the motor-driver subsystem stop the motor.
