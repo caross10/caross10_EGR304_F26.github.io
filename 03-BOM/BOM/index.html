@@ -603,18 +603,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-table" class="md-nav__link">
+  <a href="#bill-of-materials" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Table)
+      Bill of Materials
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
+  <a href="#cost-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Image)
+      Cost Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
     </span>
   </a>
   
@@ -818,18 +827,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-table" class="md-nav__link">
+  <a href="#bill-of-materials" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Table)
+      Bill of Materials
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
+  <a href="#cost-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials Example (as Image)
+      Cost Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
     </span>
   </a>
   
@@ -861,56 +879,270 @@
   <h1>Bill of Materials</h1>
 
 <h2 id="overview">Overview</h2>
-<p>written context</p>
-<h2 id="bill-of-materials-example-as-table">Bill of Materials Example (as Table)</h2>
-<p><em>Table ##: An example of one approach to adding your BOM table to this section.</em></p>
+<p>This section presents the Bill of Materials (BOM) for Team 101's Optical Sensor Monitoring subsystem for the Automatic Pet Food Dispenser. The BOM identifies the major components and supporting electrical components required to construct the subsystem. It includes component descriptions, quantities, unit costs, total costs, manufacturers, manufacturer part numbers, supplier information, datasheets, and schematic reference designators. The subsystem uses a Vishay TCST1103 optical slot sensor to detect movement of the dispensing mechanism. A Microchip MCP6004-I/P operational amplifier conditions the sensor signal before it reaches the PIC18F57Q43 Curiosity Nano microcontroller. An STMicroelectronics L7805CV voltage regulator provides a regulated 5 V supply. Additional components include resistors, capacitors, LEDs, a pushbutton, a fuse, a DC barrel jack, and a connector for subsystem integration. The optical slot sensor is the only component that still needs to be purchased. All other components listed in the BOM are already available. The listed prices for those components are included for reference, while their additional purchase costs are recorded as $0.00.</p>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<p><em>Table 1: Bill of Materials for the Optical Sensor Monitoring subsystem.</em></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;"><strong>Part Name/Description</strong></th>
-<th style="text-align: left;"><strong>Qty</strong></th>
-<th style="text-align: left;"><strong>Unit Cost</strong></th>
-<th style="text-align: left;"><strong>Total Cost</strong></th>
-<th style="text-align: left;"><strong>Manufacture</strong></th>
-<th style="text-align: left;"><strong>Manufacturer #</strong></th>
-<th style="text-align: left;"><strong>Vendor Link</strong></th>
+<th style="text-align: center;"><strong>Unit Qty</strong></th>
+<th style="text-align: right;"><strong>Per Unit Cost</strong></th>
+<th style="text-align: right;"><strong>Total Cost</strong></th>
+<th style="text-align: left;"><strong>Manufacturer</strong></th>
+<th style="text-align: left;"><strong>Manufacturer Part #</strong></th>
+<th style="text-align: left;"><strong>Supplier</strong></th>
+<th style="text-align: left;"><strong>Vendor Part Number</strong></th>
 <th style="text-align: left;"><strong>Datasheet Link</strong></th>
 <th style="text-align: left;"><strong>Schematic Reference Designators</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">8-bit SIPO/SISO Shift Register, SOIC-16 package</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">$0.49</td>
-<td style="text-align: left;">$ 0.49</td>
-<td style="text-align: left;">NXP</td>
-<td style="text-align: left;">74HC595D,112</td>
-<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550">DigiKey</a></td>
-<td style="text-align: left;"><a href="https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf">datasheet link</a></td>
-<td style="text-align: left;">U1</td>
+<td style="text-align: left;">Optical Slot Sensor, Infrared Emitter and Phototransistor, 3.1 mm Slot Width, Through-Hole Package</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$1.48</td>
+<td style="text-align: right;">$1.48</td>
+<td style="text-align: left;">Vishay Semiconductor</td>
+<td style="text-align: left;">TCST1103</td>
+<td style="text-align: left;">DigiKey</td>
+<td style="text-align: left;">Verify current listing</td>
+<td style="text-align: left;"><a href="https://www.vishay.com/docs/83752/tcst1103.pdf">Datasheet</a></td>
+<td style="text-align: left;">Photo Sensor (verify)</td>
 </tr>
 <tr>
-<td style="text-align: left;">0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package</td>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">0.2750</td>
-<td style="text-align: left;">$2.75</td>
-<td style="text-align: left;">KEMET</td>
-<td style="text-align: left;">C0805F104K5RACTU</td>
-<td style="text-align: left;">PRLTA 109</td>
-<td style="text-align: left;">n/a</td>
-<td style="text-align: left;">C2, C4, C6, C7, C8, C9, C10, C11, C12, C16</td>
+<td style="text-align: left;">Quad Operational Amplifier, Rail-to-Rail Input/Output, 1 MHz Gain-Bandwidth Product, DIP-14 Package</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.59</td>
+<td style="text-align: right;">$0.59</td>
+<td style="text-align: left;">Microchip Technology</td>
+<td style="text-align: left;">MCP6004-I/P</td>
+<td style="text-align: left;">DigiKey</td>
+<td style="text-align: left;">Verify current listing</td>
+<td style="text-align: left;"><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/20001733L.pdf">Datasheet</a></td>
+<td style="text-align: left;">U? (verify)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fixed 5 V Linear Voltage Regulator, 1.5 A Nominal Output Current, TO-220 Package</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$1.08</td>
+<td style="text-align: right;">$1.08</td>
+<td style="text-align: left;">STMicroelectronics</td>
+<td style="text-align: left;">L7805CV</td>
+<td style="text-align: left;">DigiKey</td>
+<td style="text-align: left;">Verify current listing</td>
+<td style="text-align: left;"><a href="https://www.st.com/resource/en/datasheet/l78.pdf">Datasheet</a></td>
+<td style="text-align: left;">U? (verify)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Red LED, Through-Hole Indicator, 151051RS11000 Series</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">151051RS11000</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Verify datasheet</td>
+<td style="text-align: left;">D2 (verify)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Debugging LED, Through-Hole Indicator, 151051RS11000 Series</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">151051RS11000</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Verify datasheet</td>
+<td style="text-align: left;">D1 (verify)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Momentary Tactile Pushbutton Switch, Through-Hole Package</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Omron</td>
+<td style="text-align: left;">B3F-4055</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Verify datasheet</td>
+<td style="text-align: left;">SW1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fixed Resistor, 220 Ω, Optical Sensor Infrared Emitter Current Limiting</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fixed Resistor, 10 kΩ, Phototransistor Load/Pull-Up</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fixed Resistor, 100 Ω, LED Current Limiting</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R4, R5 (verify)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ceramic Capacitor, 0.33 µF, Voltage Regulator Input Filtering</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ceramic Capacitor, 0.1 µF, Voltage Regulator Output Filtering</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ceramic Capacitor, 0.1 µF, Microcontroller Bypass</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ceramic Capacitor, 0.1 µF, Optical Sensor Supply Bypass</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fuse, 0.5 A, Power Supply Input Protection</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">F1</td>
+</tr>
+<tr>
+<td style="text-align: left;">DC Barrel Jack, Through-Hole Power Connector</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">PJ-102AH (verify)</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">Verify datasheet</td>
+<td style="text-align: left;">J1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pin Header Connector, 1 × 8, Subsystem Interface</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Verify manufacturer</td>
+<td style="text-align: left;">Conn_01x08_Pin</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">J2</td>
+</tr>
+<tr>
+<td style="text-align: left;">PIC18F57Q43 Curiosity Nano Development Board, Microcontroller and Digital/Analog I/O</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: right;">$0.00</td>
+<td style="text-align: left;">Microchip Technology</td>
+<td style="text-align: left;">PIC18F57Q43 Curiosity Nano</td>
+<td style="text-align: left;">Already owned</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;"><a href="https://www.microchip.com/">Manufacturer documentation</a></td>
+<td style="text-align: left;">U2 (verify)</td>
 </tr>
 </tbody>
 </table>
-<p>Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.</p>
+<h2 id="cost-summary">Cost Summary</h2>
+<p>The estimated new-purchase cost for the subsystem is $1.48 because the optical slot sensor is the only component that still needs to be purchased.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Cost Category</strong></th>
+<th style="text-align: right;"><strong>Amount</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Optical slot sensor</td>
+<td style="text-align: right;">$1.48</td>
+</tr>
+<tr>
+<td style="text-align: left;">Other components already owned</td>
+<td style="text-align: right;">$0.00 additional cost</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total Estimated New-Purchase Cost</strong></td>
+<td style="text-align: right;"><strong>$1.48</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The reference prices for the three selected major components are:</p>
 <ul>
-<li>You could also import your BOM via a screenshot of the spreadsheet created BOM</li>
+<li>TCST1103 optical slot sensor: 1 × $1.48 = $1.48</li>
+<li>MCP6004-I/P operational amplifier: 1 × $0.59 = $0.59</li>
+<li>L7805CV voltage regulator: 1 × $1.08 = $1.08</li>
 </ul>
-<h2 id="bill-of-materials-example-as-image">Bill of Materials Example (as Image)</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BOM-Screenshot.png" data-desc-position="bottom"><img _2000_="&quot;2000&quot;" alt="" src="../BOM-Screenshot.png" style="style" width:="width:"></a>
-<strong>Figure 2:</strong> Example Bill of Materials as a screenshot.</p>
-<p>As you can see, the text can be difficult to read without opening the image.</p>
+<p>The combined reference cost of these three major components is $3.15. This amount is not the additional purchasing cost because the operational amplifier and voltage regulator are already owned.</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>A unit cost of $0.00 indicates that the component is already owned and does not represent its retail value.</li>
+<li>Prices are estimates from the component selection report and may change with supplier pricing and availability.</li>
+<li>Verify manufacturer details, supplier part numbers, quantities, and schematic reference designators against the final KiCad schematic and actual component packaging.</li>
+<li>The PIC18F57Q43 Curiosity Nano is included in the complete component inventory even though it was preselected for the project.</li>
+<li>The subsystem displays an error message and illuminates the red status LED when a fault is detected. It does not directly request that the motor-driver subsystem stop the motor.</li>
+</ul>
 
 
 
