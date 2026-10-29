@@ -19,7 +19,7 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 | Quad Operational Amplifier, DIP-14 | 1 | $0.00 | $0.00 | Microchip Technology | MCP6004-I/P | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) | [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/20001733L.pdf) | U1 |
 | DIP-14 IC Socket for MCP6004 | 1 | $0.00 | $0.00 | Generic | DIP-14 Socket | Peralta 109 | N/A | U1 |
 | Fixed 5 V Voltage Regulator | 1 | $0.00 | $0.00 | STMicroelectronics | L7805ABV | [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ABV/1038560) | [Datasheet](https://www.st.com/resource/en/datasheet/l78.pdf) | U3 |
-| PIC18F57Q43 Microcontroller Board | 1 | $0.00 | $0.00 | Microchip Technology | PIC18F57Q43 | [Microchip](https://www.microchip.com/en-us/product/PIC18F57Q43) | [Documentation](https://www.microchip.com/en-us/product/PIC18F57Q43) | U2 |
+| PIC18F57Q43 Microcontroller Board | 1 | $0.00 | $0.00 | Microchip Technology | PIC18F57Q43 | [Microchip](https://www.microchip.com/en-us/product/PIC18F57Q43) | [Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/PIC18F27-47-57Q43-Microcontroller-Data-Sheet-XLP-DS40002147.pdf) | U2 |
 | Fixed Resistor, 100 Ω | 3 | $0.00 | $0.00 | Generic | 100 Ω | PRLTA 109 | N/A | R1, R4, R5 |
 | Fixed Resistor, 220 Ω | 1 | $0.00 | $0.00 | Generic | 220 Ω | PRLTA 109 | N/A | R2 |
 | Fixed Resistor, 10 kΩ | 1 | $0.00 | $0.00 | Generic | 10 kΩ | PRLTA 109 | N/A | R3 |
