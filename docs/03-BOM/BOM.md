@@ -23,7 +23,7 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 | Fixed Resistor, 10 kΩ | 1 | $0.00 | $0.00 | Generic | 10 kΩ | PRLTA 103 | N/A | R3 |
 | Ceramic Capacitor, 0.33 µF | 1 | $0.00 | $0.00 | Generic | 0.33 µF | PRLTA 103 | N/A | C1 |
 | Ceramic Capacitor, 0.1 µF | 4 | $0.00 | $0.00 | Generic | 0.1 µF | PRLTA 103 | N/A | C2, C3, C4, C5 |
-| Red LED, Through-Hole Indicator | 2 | $0.00 | $0.00 | Würth Elektronik | 151051RS11000 | N/A | [Product Information](https://www.we-online.com/en/components/products/151051RS11000) | D1, D2 |
+| Red LED, Through-Hole Indicator | 2 | $0.00 | $0.00 | Würth Elektronik | 151051RS11000 | PRLTA 103 | [Product Information](https://www.we-online.com/en/components/products/151051RS11000) | D1, D2 |
 | Tactile Pushbutton Switch, Through-Hole Package | 1 | $0.00 | $0.00 | Omron | B3F-4055 | PRLTA 103 | N/A | SW1 |
 | Fuse, 0.5 A | 1 | $0.00 | $0.00 | Generic | 0.5 A | N/A | N/A | F1 |
 | DC Barrel Jack, Through-Hole Power Connector | 1 | $0.00 | $0.00 | Same Sky | PJ-102AH | [DigiKey](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-102AH/408448) | [Datasheet](https://www.sameskydevices.com/product/resource/pj-102ah.pdf) | J1 |
