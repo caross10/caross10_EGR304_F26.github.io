@@ -29,3 +29,5 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 | **Estimated Total Purchase Cost** | **$3.17*** |
 
 ## Bill of Materials (Image)
+
+![Bill of Materials]()
