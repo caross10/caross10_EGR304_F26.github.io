@@ -6,8 +6,6 @@ title: Power Budget
 
 A power budget was prepared for the Optical Sensor Monitoring and Fault Detection subsystem of the Automatic Pet Food Dispenser to determine the current requirements of the major components and verify that the selected power supply can support the circuit. The budget identifies the electrical requirements of the TCST1103 optical sensor, MCP6004 operational amplifier, PIC18F57Q43 Curiosity Nano board, indicator LEDs, push button, and L7805CV voltage regulator. The subsystem operates using a regulated 5 V power rail supplied by the L7805CV voltage regulator. A rechargeable 8.4 V NiMH battery (NIMH-9V250-1B) serves as the external power source. The current requirements of the components were totaled to determine the required current for the 5 V rail. A 25% safety margin was then included to account for additional current demand and variations during operation. The power budget also evaluates the remaining current available from the regulator and estimates battery operating life based on the values entered in the spreadsheet.
 
-> Capture your power budget as an image to display. Take time to get clean breaks and a well-organized layout.
-
 ![budget1](Power%20Budge%20304.jpg){style width:"350" height:"300;"}
 
 ## Conclusions
