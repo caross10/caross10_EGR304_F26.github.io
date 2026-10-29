@@ -8,19 +8,11 @@ A power budget was prepared for the Optical Sensor Monitoring and Fault Detectio
 
 > Capture your power budget as an image to display. Take time to get clean breaks and a well-organized layout.
 
-![budget1](budgetPg1.png){style width:"350" height:"300;"}
-
-![budget2](budgetPg2.png){style width:"350" height:"300;"}
-
-![budget3](budgetPg3.png){style width:"350" height:"300;"}
+![budget1](Power%20Budge%20304.jpg){style width:"350" height:"300;"}
 
 ## Conclusions
 
-From the prepared power budget, the subsystem has a calculated total current requirement of 942 mA on the +5 V power rail. After applying a 25% safety margin, the required current increases to 1,177.5 mA. The selected L7805CV voltage regulator has a listed maximum current capacity of 1,500 mA, leaving 322.5 mA of remaining current capacity based on the budget.
-
-The external power source selected for the subsystem is the NIMH-9V250-1B rechargeable NiMH battery, which has a nominal output voltage of 8.4 V and a listed capacity of 250 mAh. The power budget estimates a battery operating life of approximately 11.36 hours using the calculated battery current of 44.03 mA.
-
-Overall, the power budget provides an estimate of the subsystem's electrical requirements and indicates that the selected regulator has sufficient listed current capacity for the calculated 5 V load. The battery life estimate provides an initial reference for expected operating time and can be used to evaluate the power supply during prototype testing.
+From the prepared power budget, the subsystem has a calculated total current requirement of 942 mA on the +5 V power rail. After applying a 25% safety margin, the required current increases to 1,177.5 mA. The selected L7805CV voltage regulator has a listed maximum current capacity of 1,500 mA, leaving 322.5 mA of remaining current capacity based on the budget. The external power source selected for the subsystem is the NIMH-9V250-1B rechargeable NiMH battery, which has a nominal output voltage of 8.4 V and a listed capacity of 250 mAh. The power budget estimates a battery operating life of approximately 11.36 hours using the calculated battery current of 44.03 mA. Overall, the power budget provides an estimate of the subsystem's electrical requirements and indicates that the selected regulator has sufficient listed current capacity for the calculated 5 V load. The battery life estimate provides an initial reference for expected operating time and can be used to evaluate the power supply during prototype testing.
 
 ## Resources
 
