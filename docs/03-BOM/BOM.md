@@ -17,7 +17,7 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 |:---|:---:|---:|---:|:---|:---|:---|:---|:---|
 | Optical Slot Sensor, Infrared Emitter and Phototransistor | 1 | $1.48 | $1.48 | Vishay Semiconductor | TCST1103 | [DigiKey](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847) | [Datasheet](https://www.vishay.com/docs/83752/tcst1103.pdf) | U4 |
 | Quad Operational Amplifier, DIP-14 | 1 | $0.59 | $0.59 | Microchip Technology | MCP6004-I/P | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) | [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/20001733L.pdf) | U1 |
-| DIP-14 IC Socket | 1 | $0.35* | $0.35* | 3M | 4814-3000-CP | Peralta 109 | N/A | U1 |
+| DIP-14 IC Socket | 1 | $0.35* | $0.35* | 3M | 4814-3000-CP | PRLTA 109 | N/A | U1 |
 | Fixed 5 V Linear Voltage Regulator | 1 | $0.70* | $0.70* | STMicroelectronics | L7805ABV | [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ABV/1038560) | [Datasheet](https://www.st.com/resource/en/datasheet/l78.pdf) | U3 |
 | PIC18F57Q43 Microcontroller Board | 1 | $25.00* | $25.00* | Microchip Technology | PIC18F57Q43 Curiosity Nano | [Digikey](https://www.digikey.com/en/products/detail/microchip-technology/DM164150/11586705) | [Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf) | U2 |
 | Fixed Resistor, 100 Ω | 3 | $0.10* | $0.30* | Stackpole Electronics | CF14JT100R | PRLTA 109 | N/A | R1, R4, R5 |
