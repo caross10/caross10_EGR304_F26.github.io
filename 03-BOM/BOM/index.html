@@ -603,18 +603,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-table" class="md-nav__link">
+  <a href="#bill-of-materials" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials (Table)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cost-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cost Summary
+      Bill of Materials
     </span>
   </a>
   
@@ -827,18 +818,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-table" class="md-nav__link">
+  <a href="#bill-of-materials" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials (Table)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cost-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cost Summary
+      Bill of Materials
     </span>
   </a>
   
@@ -880,7 +862,8 @@
 
 <h2 id="overview">Overview</h2>
 <p>This section lists the components used in the Optical Sensor Monitoring subsystem for Team 101's Automatic Pet Food Dispenser.</p>
-<h2 id="bill-of-materials-table">Bill of Materials (Table)</h2>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<p><em>Table 1: Bill of Materials for the Optical Sensor Monitoring subsystem.</em></p>
 <table>
 <thead>
 <tr>
@@ -888,6 +871,7 @@
 <th style="text-align: center;"><strong>Qty</strong></th>
 <th style="text-align: right;"><strong>Unit Cost</strong></th>
 <th style="text-align: right;"><strong>Total Cost</strong></th>
+<th style="text-align: center;"><strong>Already Owned?</strong></th>
 <th style="text-align: left;"><strong>Manufacturer</strong></th>
 <th style="text-align: left;"><strong>Manufacturer #</strong></th>
 <th style="text-align: left;"><strong>Vendor Link</strong></th>
@@ -901,6 +885,7 @@
 <td style="text-align: center;">1</td>
 <td style="text-align: right;">$1.48</td>
 <td style="text-align: right;">$1.48</td>
+<td style="text-align: center;">To confirm</td>
 <td style="text-align: left;">Vishay Semiconductor</td>
 <td style="text-align: left;">TCST1103</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847">DigiKey</a></td>
@@ -908,10 +893,239 @@
 <td style="text-align: left;">U4</td>
 </tr>
 <tr>
+<td style="text-align: left;">Fixed 5 V Linear Voltage Regulator</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.70*</td>
+<td style="text-align: right;">$0.70*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">STMicroelectronics</td>
+<td style="text-align: left;">L7805ABV</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ABV/1038560">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://www.st.com/resource/en/datasheet/l78.pdf">Datasheet</a></td>
+<td style="text-align: left;">U3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fuse, 0.5 A</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.20*</td>
+<td style="text-align: right;">$0.20*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Littelfuse</td>
+<td style="text-align: left;">0217.500MXP</td>
+<td style="text-align: left;">PRLTA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">F1</td>
+</tr>
+<tr>
+<td style="text-align: left;">DC Barrel Jack with Switch</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.70*</td>
+<td style="text-align: right;">$0.70*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Same Sky</td>
+<td style="text-align: left;">PJ-102AH</td>
+<td style="text-align: left;">PRLTA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">J1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ceramic Capacitor, 0.33 µF</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.35*</td>
+<td style="text-align: right;">$0.35*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">TDK</td>
+<td style="text-align: left;">FG24X7R1H334KNT06</td>
+<td style="text-align: left;">PRTLA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ceramic Capacitor, 0.1 µF, 50 V</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.15*</td>
+<td style="text-align: right;">$0.15*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">KEMET</td>
+<td style="text-align: left;">C320C104K5R5TA</td>
+<td style="text-align: left;">PRTLA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Capacitor, 10 µF, 25 V</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">PRLTA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resistor, 220 Ω, 250 mW</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.10*</td>
+<td style="text-align: right;">$0.10*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Stackpole Electronics</td>
+<td style="text-align: left;">CF14JT220R</td>
+<td style="text-align: left;">PRLTA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fixed Resistor, 10 kΩ, 250 mW</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.10*</td>
+<td style="text-align: right;">$0.10*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Stackpole Electronics</td>
+<td style="text-align: left;">CF14JT10K0</td>
+<td style="text-align: left;">PRLTA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resistor, 1 kΩ, 250 mW</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">PRTLA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resistor, 1 kΩ, 250 mW</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">PRTLA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resistor, 10 kΩ, 250 mW</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.10*</td>
+<td style="text-align: right;">$0.10*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Stackpole Electronics</td>
+<td style="text-align: left;">CF14JT10K0</td>
+<td style="text-align: left;">PRTLA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resistor, 1 kΩ, 250 mW</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">PRTLA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resistor, 330 Ω, 250 mW</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">R8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ceramic Capacitor, 0.1 µF, 50 V</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.15*</td>
+<td style="text-align: right;">$0.15*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">KEMET</td>
+<td style="text-align: left;">C320C104K5R5TA</td>
+<td style="text-align: left;">PRTLA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ceramic Capacitor, 0.1 µF, 50 V</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.15*</td>
+<td style="text-align: right;">$0.15*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">KEMET</td>
+<td style="text-align: left;">C320C104K5R5TA</td>
+<td style="text-align: left;">PRTLA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ceramic Capacitor, 0.1 µF, 50 V</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.15*</td>
+<td style="text-align: right;">$0.15*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">KEMET</td>
+<td style="text-align: left;">C320C104K5R5TA</td>
+<td style="text-align: left;">PRTLA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">C6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Red LED Indicator, Through-Hole</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">$0.20*</td>
+<td style="text-align: right;">$0.40*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Würth Elektronik</td>
+<td style="text-align: left;">151051RS11000</td>
+<td style="text-align: left;">PRTLA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">D1, D2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tactile Pushbutton Switch</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$0.50*</td>
+<td style="text-align: right;">$0.50*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Omron</td>
+<td style="text-align: left;">B3F-4055</td>
+<td style="text-align: left;">PRTLA 109</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">SW1</td>
+</tr>
+<tr>
+<td style="text-align: left;">PIC18F57Q43 Microcontroller Board</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: right;">$25.00*</td>
+<td style="text-align: right;">$25.00*</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: left;">Microchip Technology</td>
+<td style="text-align: left;">PIC18F57Q43 Curiosity Nano</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/microchip-technology/DM164150/11586705">DigiKey</a></td>
+<td style="text-align: left;"><a href="https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf">Hardware User Guide</a></td>
+<td style="text-align: left;">U2</td>
+</tr>
+<tr>
 <td style="text-align: left;">1 × 8 Male Pin Header, 2.54 mm Pitch</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: right;">$0.35</td>
-<td style="text-align: right;">$0.35</td>
+<td style="text-align: right;">$0.35*</td>
+<td style="text-align: right;">$0.35*</td>
+<td style="text-align: center;">To confirm</td>
 <td style="text-align: left;">Würth Elektronik</td>
 <td style="text-align: left;">61300811121</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839">DigiKey</a></td>
@@ -921,12 +1135,13 @@
 <tr>
 <td style="text-align: left;">1 × 4 Female Socket Header, 2.54 mm Pitch</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: right;">$0.50</td>
-<td style="text-align: right;">$0.50</td>
+<td style="text-align: right;">$0.50*</td>
+<td style="text-align: right;">$0.50*</td>
+<td style="text-align: center;">To confirm</td>
 <td style="text-align: left;">Würth Elektronik</td>
 <td style="text-align: left;">61030421821</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61030421821/9857502">DigiKey</a></td>
-<td style="text-align: left;"><a href="https://www.we-online.com/components/products/datasheet/61030421821.pdf">Datasheet</a></td>
+<td style="text-align: left;"><a href="https://www.we-online.com/components/detail/61030421821">Datasheet</a></td>
 <td style="text-align: left;">J3</td>
 </tr>
 <tr>
@@ -934,42 +1149,12 @@
 <td style="text-align: center;">3</td>
 <td style="text-align: right;">$0.28</td>
 <td style="text-align: right;">$0.84</td>
+<td style="text-align: center;">To confirm</td>
 <td style="text-align: left;">Keystone Electronics</td>
 <td style="text-align: left;">1038</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/keystone-electronics/1038/315154">DigiKey</a></td>
 <td style="text-align: left;"><a href="https://www.keyelco.com/userAssets/file/K75p63.pdf">Datasheet</a></td>
 <td style="text-align: left;">TP1, TP2, TP3</td>
-</tr>
-</tbody>
-</table>
-<h2 id="cost-summary">Cost Summary</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Cost Category</strong></th>
-<th style="text-align: right;"><strong>Total Cost</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Optical Slot Sensor</td>
-<td style="text-align: right;">$1.48</td>
-</tr>
-<tr>
-<td style="text-align: left;">Male Pin Header</td>
-<td style="text-align: right;">$0.35*</td>
-</tr>
-<tr>
-<td style="text-align: left;">Female Socket Header</td>
-<td style="text-align: right;">$0.50*</td>
-</tr>
-<tr>
-<td style="text-align: left;">Three PCB Test Points</td>
-<td style="text-align: right;">$0.84</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Estimated Total Purchase Cost</strong></td>
-<td style="text-align: right;"><strong>$3.17</strong>*</td>
 </tr>
 </tbody>
 </table>
