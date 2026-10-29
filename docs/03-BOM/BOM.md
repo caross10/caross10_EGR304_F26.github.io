@@ -16,10 +16,10 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Already Owned?** | **Manufacturer** | **Manufacturer #** | **Vendor Link** | **Datasheet Link** | **Schematic Reference Designators** |
 |:---|:---:|---:|---:|:---:|:---|:---|:---|:---|:---|
 | Optical Slot Sensor, Infrared Emitter and Phototransistor | 1 | $1.48 | $1.48 | No | Vishay Semiconductor | TCST1103 | [DigiKey](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847) | [Datasheet](https://www.vishay.com/docs/83764/tcst1103.pdf) | U4 |
-| Fixed 5 V Linear Voltage Regulator | 1 | $0.70* | $0.70* | Yes | STMicroelectronics | L7805CV | [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ABV/1038560) | [Datasheet](https://www.st.com/resource/en/datasheet/l78.pdf) | U3 |
-| Fuse, 0.5 A | 1 | $0.20* | $0.20* | Yes | Littelfuse | 0217.500MXP | PRLTA 109 | [Datasheet](https://www.littelfuse.com/assetdocs/fuse-217-datasheet?assetguid=AF55BE94-C42E-41B1-AD43-E070E09443FE) | F1 |
-| DC Barrel Jack with Switch | 1 | $0.70* | $0.70* | Yes | Same Sky | PJ-102AH | PRLTA 109 | [Datasheet](https://www.sameskydevices.com/product/resource/pj-102ah.pdf) | J1 |
-| Ceramic Capacitor, 0.33 µF | 1 | $0.35* | $0.35* | Yes | TDK | FG24X7R1H334KNT06 | PRTLA 109 | [Datasheet](https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fg_en.pdf) | C1 |
+| Fixed 5 V Linear Voltage Regulator | 1 | $0.70 | $0.70 | Yes | STMicroelectronics | L7805CV | [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ABV/1038560) | [Datasheet](https://www.st.com/resource/en/datasheet/l78.pdf) | U3 |
+| Fuse, 0.5 A | 1 | $0.20 | $0.20 | Yes | Littelfuse | 0217.500MXP | PRLTA 109 | [Datasheet](https://www.littelfuse.com/assetdocs/fuse-217-datasheet?assetguid=AF55BE94-C42E-41B1-AD43-E070E09443FE) | F1 |
+| DC Barrel Jack with Switch | 1 | $0.70 | $0.70 | Yes | Same Sky | PJ-102AH | PRLTA 109 | [Datasheet](https://www.sameskydevices.com/product/resource/pj-102ah.pdf) | J1 |
+| Ceramic Capacitor, 0.33 µF | 1 | $0.35 | $0.35 | Yes | TDK | FG24X7R1H334KNT06 | PRTLA 109 | [Datasheet](https://product.tdk.com/en/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fg_en.pdf) | C1 |
 | Capacitor, 10 µF, 25 V | 1 | $0.79 | $0.79 | Yes | Rubycon | 450BXC10MEFC10X20 | PRLTA 109 | [Datasheet](https://www.rubycon.co.jp/wp-content/uploads/catalog-aluminum/BXC.pdf) | C3 |
 | Resistor, 220 Ω, 250 mW | 1 | $0.10 | $0.10 | Yes | Stackpole Electronics | CF14JT220R | PRLTA 109 | [Datasheet](https://www.seielect.com/catalog/SEI-CF_CFM.pdf) | R2 |
 | Fixed Resistor, 10 kΩ, 250 mW | 1 | $0.10 | $0.10 | Yes | Stackpole Electronics | CF14JT10K0 | PRLTA 109 | [Datasheet](https://www.seielect.com/catalog/SEI-CF_CFM.pdf) | R3 |
