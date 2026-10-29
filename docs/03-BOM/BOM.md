@@ -30,4 +30,4 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 
 ## Bill of Materials (Image)
 
-![Bill of Materials](BOM%304.PNG)
+![BOM](BOM%20304.PNG)
