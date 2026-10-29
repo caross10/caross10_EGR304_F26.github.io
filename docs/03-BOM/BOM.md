@@ -9,9 +9,7 @@ tags:
 
 This section lists the components used in the Optical Sensor Monitoring subsystem for Team 101's Automatic Pet Food Dispenser.
 
-## Bill of Materials
-
-*Table 1: Bill of Materials for components still needed for the Optical Sensor Monitoring subsystem.*
+## Bill of Materials (Table)
 
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacturer** | **Manufacturer #** | **Vendor Link** | **Datasheet Link** | **Schematic Reference Designators** |
 |:---|:---:|---:|---:|:---|:---|:---|:---|:---|
@@ -30,3 +28,4 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 | Three PCB Test Points | $0.84 |
 | **Estimated Total Purchase Cost** | **$3.17*** |
 
+## Bill of Materials (Image)
