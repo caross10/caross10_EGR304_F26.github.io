@@ -36,12 +36,4 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 | PCB Jumper Shunt, 2-Position, 2.54 mm Pitch | As needed | $0.10* | TBD | Sullins Connector Solutions | STC02SYANCONN | [DigiKey](https://www.digikey.com/en/products/filter/shunts-jumpers/304) | [Datasheet] | N/A |
 | Additional Male Breakaway Pin Header, 2.54 mm Pitch | As needed | $0.35* | TBD | Würth Elektronik | 61300811121 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839) | [Datasheet](https://www.we-online.com/components/products/datasheet/61300811121.pdf) | N/A |
 | Additional Female Socket Header, 2.54 mm Pitch | As needed | $0.50* | TBD | Würth Elektronik | 61030421821 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61030421821/9857502) | [Datasheet](https://www.we-online.com/components/products/datasheet/61030421821.pdf) | N/A |
-| Additional PCB-Mount Connector for Expandability | 1 | $0.50* | $0.50* | Würth Elektronik | 61030421821 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61030421821/9857502) | [Datasheet] | N/A |
 
-## Cost Summary
-
-| **Cost Category** | **Total Cost** |
-|:---|---:|
-| Optical Slot Sensor (new purchase) | $1.48 |
-| All other components (already owned) | $0.00 |
-| **Total New-Purchase Cost** | **$1.48** |
