@@ -21,22 +21,20 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 | DC Barrel Jack with Switch | 1 | $0.70* | $0.70* | Yes | Same Sky | PJ-102AH | PRLTA 109 | N/A | J1 |
 | Ceramic Capacitor, 0.33 µF | 1 | $0.35* | $0.35* | Yes | TDK | FG24X7R1H334KNT06 | PRTLA 109 | N/A | C1 |
 | Ceramic Capacitor, 0.1 µF, 50 V | 1 | $0.15* | $0.15* | Yes | KEMET | C320C104K5R5TA | PRTLA 109 | N/A | C2 |
-| Capacitor, 10 µF, 25 V | 1 | N/A | N/A | Yes | N/A | N/A | PRLTA 109 | N/A | C3 |
-| Resistor, 220 Ω, 250 mW | 1 | $0.10* | $0.10* | Yes | Stackpole Electronics | CF14JT220R | PRLTA 109 | N/A | R2 |
-| Fixed Resistor, 10 kΩ, 250 mW | 1 | $0.10* | $0.10* | Yes | Stackpole Electronics | CF14JT10K0 | PRLTA 109 | N/A | R3 |
-| Resistor, 1 kΩ, 250 mW | 1 | N/A | N/A | Yes | N/A | N/A | PRTLA 109 | N/A | R4 |
-| Resistor, 1 kΩ, 250 mW | 1 | N/A | N/A | Yes | N/A | N/A | PRTLA 109 | N/A | R5 |
-| Resistor, 10 kΩ, 250 mW | 1 | $0.10* | $0.10* | Yes | Stackpole Electronics | CF14JT10K0 | PRTLA 109 | N/A | R6 |
-| Resistor, 1 kΩ, 250 mW | 1 | N/A | N/A | Yes | N/A | N/A | PRTLA 109 | N/A | R7 |
-| Resistor, 330 Ω, 250 mW | 1 | N/A | N/A | Yes | N/A | N/A | PRLTA 109 | N/A | R8 |
-| Ceramic Capacitor, 0.1 µF, 50 V | 1 | $0.15* | $0.15* | Yes | KEMET | C320C104K5R5TA | PRTLA 109 | N/A | C4 |
-| Ceramic Capacitor, 0.1 µF, 50 V | 1 | $0.15* | $0.15* | Yes | KEMET | C320C104K5R5TA | PRTLA 109 | N/A | C5 |
-| Ceramic Capacitor, 0.1 µF, 50 V | 1 | $0.15* | $0.15* | Yes | KEMET | C320C104K5R5TA | PRTLA 109 | N/A | C6 |
-| Red LED Indicator, Through-Hole | 2 | $0.20* | $0.40* | Yes | Würth Elektronik | 151051RS11000 | PRTLA 109 | N/A | D1, D2 |
+| Capacitor, 10 µF, 25 V | 1 | $0.79 | $0.79 | Yes | Rubycon | 450BXC10MEFC10X20 | PRLTA 109 | N/A | C3 |
+| Resistor, 220 Ω, 250 mW | 1 | $0.10 | $0.10 | Yes | Stackpole Electronics | CF14JT220R | PRLTA 109 | N/A | R2 |
+| Fixed Resistor, 10 kΩ, 250 mW | 1 | $0.10 | $0.10 | Yes | Stackpole Electronics | CF14JT10K0 | PRLTA 109 | N/A | R3 |
+| Resistor, 1 kΩ, 250 mW | 3 | $0.10 | $0.30 | Yes | Stackpole Electronics | CF14JT1K00 | PRTLA 109 | N/A | R4, R5, R7 |
+| Resistor, 10 kΩ, 250 mW | 1 | $0.10 | $0.10 | Yes | Stackpole Electronics | CF14JT10K0 | PRTLA 109 | N/A | R6 |
+| Resistor, 330 Ω, 250 mW | 1 | $0.10 | $0.10 | Yes | Stackpole Electronic | CF14JT330R | PRLTA 109 | N/A | R8 |
+| Ceramic Capacitor, 0.1 µF, 50 V | 1 | $0.1 | $0.15 | Yes | KEMET | C320C104K5R5TA | PRTLA 109 | N/A | C4 |
+| Ceramic Capacitor, 0.1 µF, 50 V | 1 | $0.15 | $0.15 | Yes | KEMET | C320C104K5R5TA | PRTLA 109 | N/A | C5 |
+| Ceramic Capacitor, 0.1 µF, 50 V | 1 | $0.15 | $0.15 | Yes | KEMET | C320C104K5R5TA | PRTLA 109 | N/A | C6 |
+| Red LED Indicator, Through-Hole | 2 | $0.20 | $0.40 | Yes | Würth Elektronik | 151051RS11000 | PRTLA 109 | N/A | D1, D2 |
 | Tactile Pushbutton Switch | 1 | $0.50 | $0.50 | Yes | Omron | B3F-4055 | PRTLA 109 | N/A | SW1 |
 | PIC18F57Q43 Microcontroller Board | 1 | $25.00 | $25.00 | Yes | Microchip Technology | PIC18F57Q43 Curiosity Nano | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/DM164150/11586705) | [Hardware User Guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf) | U2 |
-| 1 × 8 Male Pin Header, 2.54 mm Pitch | 1 | $0.35* | $0.35* | No | Würth Elektronik | 61300811121 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839) | [Datasheet](https://www.we-online.com/components/products/datasheet/61300811121.pdf) | J2 |
-| 1 × 4 Female Socket Header, 2.54 mm Pitch | 1 | $0.50* | $0.50* | No | Würth Elektronik | 61030421821 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61030421821/9857502) | [Datasheet](https://www.we-online.com/components/detail/61030421821) | J3 |
+| 1 × 8 Male Pin Header, 2.54 mm Pitch | 1 | $0.35 | $0.35 | No | Würth Elektronik | 61300811121 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839) | [Datasheet](https://www.we-online.com/components/products/datasheet/61300811121.pdf) | J2 |
+| 1 × 4 Female Socket Header, 2.54 mm Pitch | 1 | $0.50 | $0.50 | No | Würth Elektronik | 61030421821 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61030421821/9857502) | [Datasheet](https://www.we-online.com/components/detail/61030421821) | J3 |
 | PCB Test Point, Through-Hole Loop | 3 | $0.28 | $0.84 | No | Keystone Electronics | 1038 | [DigiKey](https://www.digikey.com/en/products/detail/keystone-electronics/1038/315154) | [Datasheet](https://www.keyelco.com/userAssets/file/K75p63.pdf) | TP1, TP2, TP3 |
 
 ## Bill of Materials (Image)
