@@ -35,9 +35,9 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 | Red LED Indicator, Through-Hole | 2 | $0.20* | $0.40* | Yes | Würth Elektronik | 151051RS11000 | PRTLA 109 | N/A | D1, D2 |
 | Tactile Pushbutton Switch | 1 | $0.50 | $0.50 | Yes | Omron | B3F-4055 | PRTLA 109 | N/A | SW1 |
 | PIC18F57Q43 Microcontroller Board | 1 | $25.00 | $25.00 | Yes | Microchip Technology | PIC18F57Q43 Curiosity Nano | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/DM164150/11586705) | [Hardware User Guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf) | U2 |
-| 1 × 8 Male Pin Header, 2.54 mm Pitch | 1 | $0.35* | $0.35* | To confirm | Würth Elektronik | 61300811121 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839) | [Datasheet](https://www.we-online.com/components/products/datasheet/61300811121.pdf) | J2 |
-| 1 × 4 Female Socket Header, 2.54 mm Pitch | 1 | $0.50* | $0.50* | To confirm | Würth Elektronik | 61030421821 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61030421821/9857502) | [Datasheet](https://www.we-online.com/components/detail/61030421821) | J3 |
-| PCB Test Point, Through-Hole Loop | 3 | $0.28 | $0.84 | To confirm | Keystone Electronics | 1038 | [DigiKey](https://www.digikey.com/en/products/detail/keystone-electronics/1038/315154) | [Datasheet](https://www.keyelco.com/userAssets/file/K75p63.pdf) | TP1, TP2, TP3 |
+| 1 × 8 Male Pin Header, 2.54 mm Pitch | 1 | $0.35* | $0.35* | No | Würth Elektronik | 61300811121 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839) | [Datasheet](https://www.we-online.com/components/products/datasheet/61300811121.pdf) | J2 |
+| 1 × 4 Female Socket Header, 2.54 mm Pitch | 1 | $0.50* | $0.50* | No | Würth Elektronik | 61030421821 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61030421821/9857502) | [Datasheet](https://www.we-online.com/components/detail/61030421821) | J3 |
+| PCB Test Point, Through-Hole Loop | 3 | $0.28 | $0.84 | No | Keystone Electronics | 1038 | [DigiKey](https://www.digikey.com/en/products/detail/keystone-electronics/1038/315154) | [Datasheet](https://www.keyelco.com/userAssets/file/K75p63.pdf) | TP1, TP2, TP3 |
 
 ## Bill of Materials (Image)
 
