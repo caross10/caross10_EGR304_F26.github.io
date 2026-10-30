@@ -33,7 +33,7 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 | 1 × 8 Male Pin Header, 2.54 mm Pitch | 2 | $0.35 | $0.70 | No | Würth Elektronik | 61300811121 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839) | [Datasheet](https://www.we-online.com/components/products/datasheet/61300811121.pdf) | J2 |
 | 1 × 4 Female Socket Header, 2.54 mm Pitch | 2 | $0.50 | $1.00 | No | Würth Elektronik | 61030421821 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61030421821/9857502) | [Datasheet](https://www.we-online.com/components/detail/61030421821) | J3 |
 | PCB Test Point, Through-Hole Loop | 5 | $0.28 | $1.04 | No | Keystone Electronics | 1038 | [DigiKey](https://www.digikey.com/en/products/detail/keystone-electronics/1038/315154) | [Datasheet](https://www.keyelco.com/userAssets/file/K75p63.pdf) | TP1, TP2, TP3 |
-| Quad Operational Amplifier, DIP-14 | 2 | $0.59 | $1.18 | Yes | Microchip Technology | MCP6004-I/P | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) | [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf) | U1 |
+| Quad Operational Amplifier, DIP-14 | 2 | $0.60 | $1.20 | Yes | Microchip Technology | MCP6004-I/P | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) | [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf) | U1 |
 
 ## Bill of Materials (Image)
 
