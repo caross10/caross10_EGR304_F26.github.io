@@ -15,7 +15,7 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Already Owned?** | **Manufacturer** | **Manufacturer #** | **Vendor Link** | **Datasheet Link** | **Schematic Reference Designators** |
 |:---|:---:|---:|---:|:---:|:---|:---|:---|:---|:---|
-| Optical Slot Sensor, Infrared Emitter and Phototransistor | 1 | $1.48 | $1.48 | No | Vishay Semiconductor | TCST1103 | [DigiKey](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847) | [Datasheet](https://www.vishay.com/docs/83764/tcst1103.pdf) | U4 |
+| Optical Slot Sensor, Infrared Emitter and Phototransistor | 2 | $1.48 | $2.96 | No | Vishay Semiconductor | TCST1103 | [DigiKey](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/TCST1103/2354847) | [Datasheet](https://www.vishay.com/docs/83764/tcst1103.pdf) | U4 |
 | Fixed 5 V Linear Voltage Regulator | 1 | $0.70 | $0.70 | Yes | STMicroelectronics | L7805CV | [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ABV/1038560) | [Datasheet](https://www.st.com/resource/en/datasheet/l78.pdf) | U3 |
 | Fuse, 0.5 A | 1 | $0.20 | $0.20 | Yes | Littelfuse | 0217.500MXP | PRLTA 109 | [Datasheet](https://www.littelfuse.com/assetdocs/fuse-217-datasheet?assetguid=AF55BE94-C42E-41B1-AD43-E070E09443FE) | F1 |
 | DC Barrel Jack with Switch | 1 | $0.70 | $0.70 | Yes | Same Sky | PJ-102AH | PRLTA 109 | [Datasheet](https://www.sameskydevices.com/product/resource/pj-102ah.pdf) | J1 |
@@ -30,10 +30,10 @@ This section lists the components used in the Optical Sensor Monitoring subsyste
 | Red LED Indicator, Through-Hole | 2 | $0.20 | $0.40 | Yes | Würth Elektronik | 151051RS11000 | PRTLA 109 | [Datasheet](https://www.we-online.com/components/products/datasheet/151051RS11000.pdf) | D1, D2 |
 | Tactile Pushbutton Switch | 1 | $0.50 | $0.50 | Yes | Omron | B3F-4055 | PRTLA 109 | [Datasheet](https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf) | SW1 |
 | PIC Microcontroller Board | 1 | $10.61 | $10.61 | Yes | Microchip Technology | DM164150 | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/DM164150/11586705) | [Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/PIC18F57Q43-Curiosity-Nano-HW-UserGuide-DS40002186B.pdf) | U2 |
-| 1 × 8 Male Pin Header, 2.54 mm Pitch | 1 | $0.35 | $0.35 | No | Würth Elektronik | 61300811121 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839) | [Datasheet](https://www.we-online.com/components/products/datasheet/61300811121.pdf) | J2 |
-| 1 × 4 Female Socket Header, 2.54 mm Pitch | 1 | $0.50 | $0.50 | No | Würth Elektronik | 61030421821 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61030421821/9857502) | [Datasheet](https://www.we-online.com/components/detail/61030421821) | J3 |
-| PCB Test Point, Through-Hole Loop | 3 | $0.28 | $0.84 | No | Keystone Electronics | 1038 | [DigiKey](https://www.digikey.com/en/products/detail/keystone-electronics/1038/315154) | [Datasheet](https://www.keyelco.com/userAssets/file/K75p63.pdf) | TP1, TP2, TP3 |
-| Quad Operational Amplifier, DIP-14 | 1 | $0.59 | $0.59 | Yes | Microchip Technology | MCP6004-I/P | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) | [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf) | U1 |
+| 1 × 8 Male Pin Header, 2.54 mm Pitch | 2 | $0.35 | $0.70 | No | Würth Elektronik | 61300811121 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811121/4846839) | [Datasheet](https://www.we-online.com/components/products/datasheet/61300811121.pdf) | J2 |
+| 1 × 4 Female Socket Header, 2.54 mm Pitch | 2 | $0.50 | $1.00 | No | Würth Elektronik | 61030421821 | [DigiKey](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61030421821/9857502) | [Datasheet](https://www.we-online.com/components/detail/61030421821) | J3 |
+| PCB Test Point, Through-Hole Loop | 5 | $0.28 | $1.04 | No | Keystone Electronics | 1038 | [DigiKey](https://www.digikey.com/en/products/detail/keystone-electronics/1038/315154) | [Datasheet](https://www.keyelco.com/userAssets/file/K75p63.pdf) | TP1, TP2, TP3 |
+| Quad Operational Amplifier, DIP-14 | 2 | $0.59 | $1.18 | Yes | Microchip Technology | MCP6004-I/P | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060) | [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf) | U1 |
 
 ## Bill of Materials (Image)
 
