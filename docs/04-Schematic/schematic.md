@@ -8,7 +8,7 @@ This schematic represents the optical sensor monitoring and fault detection subs
 
 ![schematic](Subsystem%20Schematic%20Design.png)
 
-**Figure 1:** Showing the individual timer/scheduler subsystem schematic.
+**Figure 1:** Showing the individual subsystem schematic.
 
 ## Resources
 
